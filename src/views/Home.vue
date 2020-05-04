@@ -23,6 +23,7 @@
         <home-blurb
         :title="blurbs[index].head"
         :body="blurbs[index].body"
+        :route="blurbs[index].route"
         ></home-blurb>
       </v-flex>
 
@@ -51,11 +52,13 @@ export default {
       blurbs: [
                 {                
                   head: `Business Development ~ Clean Energy &  Resource Efficiency`,
-                  body: `Our approach to business development is grounded in a 20 year foundation of science communications in the documentary and science museum disciplines. Effectively communicating with an economy of words is critical to engaging audiences, whether customers, investors or partners.`
+                  body: `Our approach to business development is grounded in a 20 year foundation of science communications in the documentary and science museum disciplines. Effectively communicating with an economy of words is critical to engaging audiences, whether customers, investors or partners.`,
+                  route: `/about`
                 },
                 {
                   head: `Fundraising and Impact Investment`,
-                  body: `Our approach to investment focus on providing value for both the recipient and the investor. Impact investment opportunities no longer require reducing financial return to generate positive environmental or social value. With an FINRA Series 82 + 63 licenses, and team of partners sourcing deals, we connect investors to opportunities while sourcing capital for companies and funds focusing on Clean Energy and Resource Efficiency.`
+                  body: `Our approach to investment focus on providing value for both the recipient and the investor. Impact investment opportunities no longer require reducing financial return to generate positive environmental or social value. With an FINRA Series 82 + 63 licenses, and team of partners sourcing deals, we connect investors to opportunities while sourcing capital for companies and funds focusing on Clean Energy and Resource Efficiency.`,
+                  route: `/about`
                 },
               ],
       cards: [
