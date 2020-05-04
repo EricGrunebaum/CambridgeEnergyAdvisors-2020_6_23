@@ -19,7 +19,7 @@ export default {
       studies: [
                   {
                     title: `Case Study: European Pharma Catalyst/Green Chemistry Firm`,
-                    photo: require('../../public/energy_circle.jpg'),
+                    photo: ``,
                     body: `For this EU co., entering the US market through the unparalleled Kendall Square pharma cluster was critical to gaining market share for its world-leading catalysts that reduce toxic solvents and energy required to manufacture pharmaceuticals.
                             Entering foreign markets skillfully requires clear communication, convenient access and a genuine presence in a that market. Beginning with the raw materials of a great technology and the science and results to back it up is not sufficient. Transforming the dense, scientific knowledge into a compelling narrative that grabs people’s attention, and then getting in front of the right eyes is cricitical.
                             For this company, in an iterative process with company principals, we completely rewrote their technology and investment decks, wrote their first mission statement and tag-lines, and helped them connect with key players in the local pharma and “specialty chemicals” ecosystems with a green chemistry focus. Our work helped transform their business development strategy, introduced them to wholesalers and
