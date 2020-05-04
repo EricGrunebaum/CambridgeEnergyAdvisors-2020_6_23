@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <a href="top"></a>
     <v-container>
     
       <h1 class="display-3 hidden-xs-only">About Us</h1>

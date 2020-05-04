@@ -44,6 +44,10 @@
                             </v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
+                    <v-list-item class="justify-center">
+                        <a href="mailto:egrunebaum@aol.com"><v-icon class="primary--text">mdi-email-send-outline</v-icon></a>
+                        <a href="tel:617-304-5824"><v-icon class="primary--text">mdi-phone</v-icon></a>
+                    </v-list-item>
                 </v-list>
             </v-navigation-drawer>
    </nav>
