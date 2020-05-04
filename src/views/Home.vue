@@ -1,63 +1,61 @@
 <template>
   
   <div class="home">
-    <h1 class="display-3 hidden-xs-only">Cambridge Energy Advisors</h1>
-      <h4 class="display-1 hidden-sm-and-up">Cambridge Energy Advisors</h4>
-    <v-container>
-    <v-layout row class="my-4">
     
-    <v-layout v-for="(card, index) in cards" :key="card" row class="my-4">
-    <!-- <v-layout v-for="blurb in blurbs" :key="blurb" row class="my-4"> -->
-    <!-- <v-layout v-for="card in cards" :key="card" row class="my-4"> -->
-      <v-flex xs12 s12 md6 lg6 xl6>
-        <card-template
-        :title="card.head"
-        :body="card.content"
-        :route="card.route"
-        :photo="card.photo"
-        >
-        </card-template>
-      </v-flex>
+      <div v-for="blurb in blurbs" :key="blurb">
+      <hero-image
+      :head="blurb.title"
+      :title="blurb.head"
+      :body="blurb.body"
+      :photo="blurb.source"></hero-image>
       
-      <v-flex xs12 s12 md4 lg4 xl4 align-self-center="">
-        <home-blurb
-        :title="blurbs[index].head"
-        :body="blurbs[index].body"
-        :route="blurbs[index].route"
-        ></home-blurb>
-      </v-flex>
+        <v-row class="d-flex">
+      <!-- <card-template class="justify-start"
+      :photo="cards[index].photo"
+      :head="cards[index].head"
+      :content="cards[index].content"
+      :route="cards[index].route"
+      ></card-template> -->
+      <home-blurb class="ma-12"
+      :title="blurb.head"
+      :body='blurb.body'
+      :route="blurb.route"></home-blurb>
+      </v-row>
+    
+    </div>
+    
 
-    <!-- </v-layout> -->
-    <!-- </v-layout> -->
-    </v-layout>
-    </v-layout>
-    </v-container>
   </div>
 
 </template>
 
 <script>
 // @ is an alias to /src
-import CardTemplate from '@/components/CardTemplate'
+// import CardTemplate from '@/components/CardTemplate'
 import HomeBlurb from '@/components/HomeBlurb'
+import HeroImage from '@/components/HeroImage'
 export default {
   name: 'Home',
   components: {
-    'card-template': CardTemplate,
-    'home-blurb': HomeBlurb
+    // 'card-template': CardTemplate,
+    'home-blurb': HomeBlurb,
+    'hero-image': HeroImage
 
   },
   data(){
     return {
       blurbs: [
-                {                
+                { 
+                  title: `Cambridge Energy Advisors`,               
                   head: `Business Development ~ Clean Energy &  Resource Efficiency`,
                   body: `Our approach to business development is grounded in a 20 year foundation of science communications in the documentary and science museum disciplines. Effectively communicating with an economy of words is critical to engaging audiences, whether customers, investors or partners.`,
+                  source: require(`../../public/trees.jpg`),
                   route: `/about`
                 },
                 {
                   head: `Fundraising and Impact Investment`,
                   body: `Our approach to investment focus on providing value for both the recipient and the investor. Impact investment opportunities no longer require reducing financial return to generate positive environmental or social value. With an FINRA Series 82 + 63 licenses, and team of partners sourcing deals, we connect investors to opportunities while sourcing capital for companies and funds focusing on Clean Energy and Resource Efficiency.`,
+                  source: require(`../../public/network.jpg`),
                   route: `/about`
                 },
               ],
