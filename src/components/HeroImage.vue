@@ -14,8 +14,8 @@
     <h1 class="display-4 hidden-xs-only">{{ head }}</h1>
     <h1 class="display-2 hidden-sm-and-up">{{ head }}</h1>
     <v-col class="" cols="12">
-        <h1 class="text-center display-2 font-weight-thin mb-4 hidden-xs-only">{{ title }}</h1>
-        <h1 class="text-center display-1 font-weight-thin mb-4 hidden-sm-and-up">{{ title }}</h1>
+        <h1 class="text-center display-2 mb-4 hidden-xs-only">{{ title }}</h1>
+        <h1 class="text-center display-1 mb-4 hidden-sm-and-up">{{ title }}</h1>
         <h4 class="text-center subheading text--light">{{ body }}</h4>
         <v-btn :to="route" outlined="" class="ma-6">Learn More <v-icon right>mdi-chevron-right</v-icon> </v-btn>
     </v-col>
@@ -34,5 +34,9 @@ export default {
     .subheading{
         font-size: 20px;
         font-weight: 400;
+    }
+    .display-4,
+    .display-2{
+        font-weight: 600;
     }
 </style>
