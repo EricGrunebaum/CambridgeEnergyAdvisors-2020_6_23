@@ -1,13 +1,17 @@
 <template>
   
   <div class="home">
-    
+    <v-div>
+    <h1 class="display-4 my-4">Cambridge Energy Advisors</h1>
+    </v-div>
+    <v-divider class="my-4 primary"></v-divider>
       <div v-for="blurb in blurbs" :key="blurb">
       <hero-image
-      :head="blurb.title"
+      
       :title="blurb.head"
       :body="blurb.body"
-      :photo="blurb.source"></hero-image>
+      :photo="blurb.source"
+      :route="blurb.route"></hero-image>
       
         <v-row class="d-flex">
       <!-- <card-template class="justify-start"
@@ -55,7 +59,7 @@ export default {
                 {
                   head: `Fundraising and Impact Investment`,
                   body: `Our approach to investment focus on providing value for both the recipient and the investor. Impact investment opportunities no longer require reducing financial return to generate positive environmental or social value. With an FINRA Series 82 + 63 licenses, and team of partners sourcing deals, we connect investors to opportunities while sourcing capital for companies and funds focusing on Clean Energy and Resource Efficiency.`,
-                  source: require(`../../public/network.jpg`),
+                  source: require(`../../public/energy_circle.jpg`),
                   route: `/about`
                 },
               ],
@@ -79,3 +83,9 @@ export default {
   
 }
 </script>
+<style scoped>
+  .display-4{
+    font-family: Montserrat, cursive;
+    color: rgba(0, 0, 0, .8)
+  }
+</style>
