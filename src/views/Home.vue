@@ -3,7 +3,6 @@
   <div class="home">
     <v-div>
       <!--Vertically center heading-->
-    <h1 class="display-4 my-4 hidden-xs-only">Cambridge Energy Advisors</h1>
     <h1 class="display-1 my-4 hidden-sm-and-up">Cambridge Energy Advisors</h1>
     </v-div>
     <v-divider class="my-4 primary"></v-divider>

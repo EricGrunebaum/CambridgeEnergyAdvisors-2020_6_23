@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <h1 class="display-3 hidden-xs-only">Projects</h1>
+    <h1 class="display-3 hidden-xs-only ma-6">Projects</h1>
       <h3 class="display-2 hidden-sm-and-up">Projects</h3>
     
     <v-container v-for="study in studies" :key="study">

@@ -2,7 +2,7 @@
   <div class="about">
     <v-container>
     
-      <h1 class="display-3 hidden-xs-only">About Us</h1>
+      <h1 class="display-3 hidden-xs-only ma-6">About Us</h1>
       <h3 class="display-2 hidden-sm-and-up">About Us</h3>
 
     <div v-for="content in contents" :key="content" class="text-left ma-4">
