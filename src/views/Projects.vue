@@ -2,24 +2,29 @@
   <div class="projects">
     <h1 class="display-3 hidden-xs-only ma-6">Projects</h1>
       <h3 class="display-2 hidden-sm-and-up">Projects</h3>
-    
+      
+       
+
     <v-container v-for="study in studies" :key="study">
-      <h2 class="display-1 hidden-sm-and-down">{{ study.title }}</h2>
-      <span class="display-1 hidden-md-and-up">{{ study.title }}</span>
+      <h2 class="display-1 hidden-sm-and-down" :id="study.name">{{ study.title }}</h2>
+      <span class="display-1 hidden-md-and-up" :id="study.name">{{ study.title }}</span>
       <v-img :src="study.photo" alt="" contain="" max-height="400px"></v-img>
       <div v-for="paragraph in study.paragraphs" :key="paragraph">
       <blockquote class="blockquote text-left">{{ paragraph }}</blockquote>
       </div>
-      <v-divider class="primary"></v-divider>
+      <v-divider class="primary my-8"></v-divider>
     </v-container>
   </div>    
 </template>
 <script>
+
 export default {
-  data(){
-    return {
+  
+  data: () => {
+    return {    
+
       studies: [
-                  {
+                  {                  
                     title: `Case Study: European Pharma Catalyst/Green Chemistry Firm`,
                     photo: ``,
                     paragraphs: [
@@ -30,7 +35,7 @@ export default {
                             Nobel Prize in Chemistry.`
                             ]
                   },
-                  {
+                  {                  
                     title: `Case Study: Solar Tax Equity and Bond fund`,
                     photo: ``,
                     paragraphs: [
@@ -45,6 +50,9 @@ export default {
                 ]
       
     }
+  },
+  components: {
+    
   }
 }
 </script>
