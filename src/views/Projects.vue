@@ -74,7 +74,7 @@ export default {
                   },
                   {                  
                     title: `Case Study: Brownfield to Accessible Natural Reservation in Environmental Justice Community`, 
-                    photo: ``,
+                    photo: require('../../public/swimming.png'),
                     paragraphs: [
                             `Once an open pit mine where rich clay deposits were extracted until the late 1800s, “Jerry’s Pit” filled with water and was transformed into a popular local swimming hole for nearly 100 years. However in 1961 it was fenced-off and public access has now been prohibited for 60 years while some of the site was polluted by the infamous W.R. Grace chemical company. Restoring the site for safe public access, while enhancing the natural ecosystem provides an unusual opportunity for a new natural reservation adjacent to a large environmental justice community.`,
                             `Fences have protected the community from toxic waste, including asbestos left in the soil by W.R Grace, but they have left a permanent blight in a neighborhood now settled by a diverse population of ~4,000 affordable housing community members who likely do not have easy access to natural areas. Wildlife has flourished in the pond and its environs in the last half-century and a sensitive, safe re-opening of the site via boardwalks as well as the addition of a newly created wetland, an off-road bike-way and nature paths, could create a rare opportunity for enhancing habitat and reconnecting the local community with nature.`,
@@ -85,7 +85,7 @@ export default {
                   //Sector 3
                   {                  
                     title: `Case Study: European Pharma Catalyst/Green Chemistry Firm`, 
-                    photo: ``,
+                    photo: require('../../public/atoms.png'),
                     paragraphs: [
                             `For this EU co., entering the US market through the unparalleled Kendall Square pharma cluster was critical to gaining market share for its world-leading catalysts that reduce toxic solvents and energy required to manufacture pharmaceuticals.`,
                             `Entering foreign markets skillfully requires clear communication, access to markets and sales channels and a genuine presence in the region. The raw materials of a great technology, the science undergirding it and the results to back it up is not sufficient. Transforming the dense, scientific knowledge into a compelling narrative that grabs people’s attention, and then getting in front of the right eyes is critical.`,
@@ -103,5 +103,7 @@ export default {
 }
 </script>
 <style scoped>
-
+  v-card:not(:hover){
+    opacity: .06;
+  }
 </style>
