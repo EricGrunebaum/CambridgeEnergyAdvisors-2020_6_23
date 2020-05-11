@@ -37,10 +37,10 @@ export default {
         
       },
       contents: {
-        a: `Cambridge Energy Advisors and principal Eric Grunebaum, provide a mixed consultancy focused on developing clean energy projects, providing critical business development and raising investment for companies and funds that move our energy and resource systems towards transformational clean energy and efficiency improvements.`,
-        b: `Through Bequia Securities, we also help connect investors to opportunities that allow high net-worth individuals, family offices, foundations, endowments to financially benefit from the systemic changes now taking place throughout our resource and energy systems.`,
-        c: `In our project development business, we focus on developing building-scaled clean energy and efficiency projects and sourcing capital to fund them when the building owner, whether non-profit, school or private owner may not have the capital available or may have different priorities for their capital.`,
-        d: `Our broad experience and visibility into multiple domains, from project development, business development, communications, to fundraising from both the investor and recipient’s perspectives provides us with a valuable perspective and insight into catalyzing change through the worlds of business and investment.`
+        a: `Cambridge Energy Advisors and principal Eric Grunebaum, provide a broad consultancy focused on developing clean energy projects, raising investment for resource efficiency companies and impact funds and providing critical business development strategies that moves our energy and resource systems towards transformational clean energy and efficiency improvements.`,
+        b: `Through Bequia Securities, we help connect investors to opportunities that allow high net-worth individuals, family offices, foundations and endowments to financially benefit from the systemic changes which are underway throughout our resource and energy systems and will continue on that trajectory for the coming decades.`,
+        c: `Our project development business focuses on building-scale clean energy and efficiency projects and sourcing capital to fund them in cases where the building owner – whether non-profit, school or commercial – may have different capital priorities. We also help unlock tax benefits for non-tax paying entities.`,
+        d: `Our broad experience and visibility into these related domains, from project development, business development, communications and fundraising – from both the investor’s and recipient’s side of table – provides us with a valuable perspective and insight into catalyzing change through the worlds of business and investment.`
       }
     }
   }  
