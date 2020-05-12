@@ -17,12 +17,14 @@
           overlap
           offset-x="100"
           offset-y="10"
-          class="text-break"
+          :style="{'max-width': maxText}"
+          
           
         >
         <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"
       max-width="800"
-      hover="">
+      hover=""
+      >
         <!-- <h2 class="display-1 hidden-sm-and-down" :id="study.name">{{ study.title }}</h2> -->
        
         <v-parallax :src="study.photo" alt="" contain="" class="align-center justify-center white--text">
@@ -32,7 +34,7 @@
           
           
           </v-card-title>
-          <v-card-title class="hidden-sm-and-up" :id="study.name">{{ study.title }}</v-card-title>
+          <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up" :id="study.name">{{ study.title }}</v-card-title>
         </v-parallax>
         <div v-for="paragraph in study.paragraphs" :key="paragraph">
         <!-- <blockquote class="blockquote text-left">{{ paragraph }}</blockquote> -->
@@ -54,7 +56,7 @@
 export default {
   
   data: () => {
-    return {    
+    return {   
       dialog: false,
       studies: [
                   //Sector 1
