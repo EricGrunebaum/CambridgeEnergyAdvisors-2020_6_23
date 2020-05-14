@@ -39,4 +39,8 @@ export default {
     .display-2{
         font-weight: 600;
     }
+    h4{
+        max-width: 800px;
+        word-break: normal;
+    }
 </style>
