@@ -11,40 +11,52 @@
         
       <v-col cols="12" sm="6" md="6" lg="4" v-for="study in studies" :key="study">
         
+
         <v-badge
           :color="study.color"
           :content="study.category"
           overlap
-          offset-x="100"
+          offset-x="115"
           offset-y="10"
           :style="{'max-width': maxText}"
           
           
         >
-        <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"
-      max-width="800"
-      hover=""
-      >
-        <!-- <h2 class="display-1 hidden-sm-and-down" :id="study.name">{{ study.title }}</h2> -->
-       
-        <v-parallax :src="study.photo" alt="" contain="" class="align-center justify-center white--text">
+<v-dialog v-model="dialog">
+          <template v-slot:activator="{ on }">
+          <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"
+                  max-width="800"
+                  hover=""
+                  >
         
-          
-          <v-card-title class="hidden-xs-only text-break" style="max-width: 400px; word-break: normal;" :id="study.name">{{ study.title }}
-          
-          
-          </v-card-title>
-          <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up" :id="study.name">{{ study.title }}</v-card-title>
-        </v-parallax>
-        <div v-for="paragraph in study.paragraphs" :key="paragraph">
-        <!-- <blockquote class="blockquote text-left">{{ paragraph }}</blockquote> -->
-        <!-- <v-container>
-        <v-card-body class="text-left ma-10">{{ paragraph }}</v-card-body>
-        </v-container> -->
-        </div>
-        </v-card>
+          <!-- <h2 class="display-1 hidden-sm-and-down" :id="study.name">{{ study.title }}</h2> -->
+        
+            <v-parallax :src="study.photo" alt="" contain="" class="align-center justify-center white--text" v-on="on">
+            
+              
+              <v-card-title class="hidden-xs-only text-break" style="max-width: 400px; word-break: normal;" :id="study.name">{{ study.title }}
+              </v-card-title>
+              <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up" :id="study.name">{{ study.title }}</v-card-title>
+            </v-parallax>
+            
+        
+          </v-card>
+          </template>
+          <v-card v-for="study in studies" :key="study">
+          <v-div>
+            <!-- <v-container v-for="paragraph in study.paragraphs" :key="paragraph"> -->
+            <!-- <v-container v-for="(study) in studies" :key="study"> -->
+            <v-container >
+            <v-card-text  class="text-left">
+            <p class="text-left">{{ study.paragraphs }}</p>
+            
+            <v-btn color="green darken-1" text @click="dialog = false">Back to projects<v-icon>mdi-chevron_right</v-icon></v-btn>
+            </v-card-text>
+            </v-container>
+            </v-div>
+            </v-card>
+</v-dialog>
         </v-badge>
-        
       </v-col> 
       
     </v-row>

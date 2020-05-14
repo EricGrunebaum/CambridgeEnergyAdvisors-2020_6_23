@@ -2,15 +2,22 @@
     <v-row justify="center">
         <v-expansion-panels accordion multiple hover popout>
             <v-expansion-panel
-                v-for="(item,i) in 5"
-                :key="i"
+                
             >
                     <v-expansion-panel-header>
-                            <span class="title mx-2">Item</span>
-                            <span class="mx-2"> 11/22/2019 </span>
+                            <span class="title mx-2">{{ title }}</span>
+                            <span class="mx-2 text-right align-text-center"> {{ date }} </span>
                     </v-expansion-panel-header>
-                <v-expansion-panel-content>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <v-expansion-panel-content class="text-left">
+                <span class="pr-4 py-4"><em>{{ role }}</em></span>
+                <br>
+                <br>
+                <p>{{ body }}</p>
+                <br>
+                <div v-if="link != ''">
+                    <a :href="link" target="_blank">Learn More</a>
+                </div>
+                <div v-else></div>
                 </v-expansion-panel-content>
             </v-expansion-panel>
         </v-expansion-panels>
@@ -18,7 +25,7 @@
 </template>
 <script>
 export default {
-    
+    props: ['date', 'role', 'title', 'body', 'link']
 }
 </script>
 <style scoped>
