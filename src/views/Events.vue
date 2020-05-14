@@ -3,8 +3,8 @@
     <h1 class="display-3 hidden-xs-only ma-6">Events</h1>
       <h3 class="display-2 hidden-sm-and-up ma-6">Events</h3>
       
-    <h2 class=" hidden-xs-only ma-6 text-left">Upcoming Events</h2>
-      <h4 class="hidden-sm-and-up ma-6">Upcoming Events</h4>
+    <h2 class=" hidden-xs-only ma-6 text-left primary--text">Upcoming Events</h2>
+      <h4 class="hidden-sm-and-up ma-6 text-underline primary--text">Upcoming Events</h4>
       <v-div v-for="upcomingEvent in upcomingEvents" :key="upcomingEvent">
       <event-template
       :date="upcomingEvent.date"
@@ -13,8 +13,8 @@
       :body="upcomingEvent.body"
       :link="upcomingEvent.link"></event-template>
       </v-div>
-    <h2 class=" hidden-xs-only ma-6 text-left">Prior Events</h2>
-      <h4 class="hidden-sm-and-up ma-6">Prior Events</h4>
+    <h2 class=" hidden-xs-only ma-6 text-left primary--text">Prior Events</h2>
+      <h4 class="hidden-sm-and-up ma-6 primary--text">Prior Events</h4>
       <v-div v-for="priorEvent in priorEvents" :key="priorEvent">
       <event-template
       :date="priorEvent.date"
@@ -34,7 +34,7 @@ export default {
       return {
         upcomingEvents: [
           {
-            date: 'Oct 2020',
+            date: 'Oct 6, 2020',
             role: `Curator & Moderator`,
             title: `Flipping the Switch: Are Oil & Gas Companies Evolving, or are they Holding Up Climate Progress? Boston Area Sustainability Group: Oct. 2020`,
             body: `The spotlight is on oil & gas companies and their progress, or lack-thereof, on working towards decarbonization. Our lead speaker will be Dr. Peter Frumhoff, Director of Science & Policy and Chief Climate Scientist at the Union of Concerned Scientists and coauthor of the annual UCS “Climate Accountability Scorecard”, subtitled “Insufficient Progress from Major Fossil Fuel Companies.”`,

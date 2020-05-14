@@ -4,16 +4,15 @@
             <v-expansion-panel
                 
             >
-                    <v-expansion-panel-header>
+                    <v-expansion-panel-header class="primary">
                             <span class="title mx-2">{{ title }}</span>
                             <span class="mx-2 text-right align-text-center"> {{ date }} </span>
                     </v-expansion-panel-header>
-                <v-expansion-panel-content class="text-left">
-                <span class="pr-4 py-4"><em>{{ role }}</em></span>
-                <br>
+                <v-expansion-panel-content class="text-left mt-3">               
+                <span class="primary--text"><em>{{ role }}</em></span>
                 <br>
                 <p>{{ body }}</p>
-                <br>
+                                
                 <div v-if="link != ''">
                     <a :href="link" target="_blank">Learn More</a>
                 </div>
@@ -29,5 +28,5 @@ export default {
 }
 </script>
 <style scoped>
-
+    
 </style>

@@ -16,14 +16,18 @@
           :color="study.color"
           :content="study.category"
           overlap
-          offset-x="115"
+          
+          offset-x="370"
           offset-y="10"
-          :style="{'max-width': maxText}"
+          :style="{'max-width': maxText}
+          "
+        
+        
           
           
         >
-<v-dialog v-model="dialog">
-          <template v-slot:activator="{ on }">
+
+
           <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"
                   max-width="800"
                   hover=""
@@ -31,31 +35,19 @@
         
           <!-- <h2 class="display-1 hidden-sm-and-down" :id="study.name">{{ study.title }}</h2> -->
         
-            <v-parallax :src="study.photo" alt="" contain="" class="align-center justify-center white--text" v-on="on">
+            <v-parallax :src="study.photo" alt="" contain="" class="align-center justify-center white--text">
             
               
               <v-card-title class="hidden-xs-only text-break" style="max-width: 400px; word-break: normal;" :id="study.name">{{ study.title }}
               </v-card-title>
               <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up" :id="study.name">{{ study.title }}</v-card-title>
             </v-parallax>
+            <router-link :to="{ name: 'SingleProject' }"></router-link>
             
         
           </v-card>
-          </template>
-          <v-card v-for="study in studies" :key="study">
-          <v-div>
-            <!-- <v-container v-for="paragraph in study.paragraphs" :key="paragraph"> -->
-            <!-- <v-container v-for="(study) in studies" :key="study"> -->
-            <v-container >
-            <v-card-text  class="text-left">
-            <p class="text-left">{{ study.paragraphs }}</p>
-            
-            <v-btn color="green darken-1" text @click="dialog = false">Back to projects<v-icon>mdi-chevron_right</v-icon></v-btn>
-            </v-card-text>
-            </v-container>
-            </v-div>
-            </v-card>
-</v-dialog>
+          
+
         </v-badge>
       </v-col> 
       
@@ -74,7 +66,7 @@ export default {
                   //Sector 1
                   { 
                     badgeColor: 'primary',              
-                    category: 'Fundraising',
+                    category: 'Fundraising & Impact Investment',
                     title: `Solar Tax Equity and Bond fund`,
                     photo: require('../../public/solar_array1.png'),
                       paragraphs: [
@@ -98,7 +90,7 @@ export default {
                   //Sector 2
                   { 
                     color: 'orange',              
-                    category: 'Project Development',
+                    category: `project development.`,
                     title: `Commercial Solar in Harvard Square, Cambridge `, 
                     photo: require('../../public/solar_workers.png'),
                     paragraphs: [
@@ -109,7 +101,7 @@ export default {
                   },
                   { 
                     color: 'orange',         
-                    category: 'Project Development',
+                    category: `project development.`,
                     title: `Brownfield to Accessible Natural Reservation`, 
                     photo: require('../../public/swimming1.png'),
                     paragraphs: [
@@ -142,5 +134,5 @@ export default {
 }
 </script>
 <style scoped>
- 
+  
 </style>
