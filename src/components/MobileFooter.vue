@@ -1,9 +1,11 @@
 <template>
     <div class="text-center">
-    <v-div class="d-flex justify-center"
-     @click="sheet = !sheet">
-        <v-icon>mdi-chevron-up</v-icon>
-    </v-div>
+    <span class="d-flex justify-center">Contact
+        <v-icon 
+        @click="sheet = !sheet">
+            mdi-chevron-up
+        </v-icon>
+    </span>
     <v-bottom-sheet v-model="sheet">
       <v-sheet class="text-center" height="">
         <v-icon
