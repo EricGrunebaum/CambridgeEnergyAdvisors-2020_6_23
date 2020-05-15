@@ -1,6 +1,6 @@
 <template>
     <v-row justify="center">
-        <v-expansion-panels accordion multiple hover popout>
+        <v-expansion-panels accordion multiple hover popout >
             <v-expansion-panel
                 
             >

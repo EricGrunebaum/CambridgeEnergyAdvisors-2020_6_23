@@ -39,6 +39,10 @@ export default {
     .display-2{
         font-weight: 600;
     }
+    h1{
+        max-width: 800px;
+        word-break: normal;
+    }
     h4{
         max-width: 800px;
         word-break: normal;
