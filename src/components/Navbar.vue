@@ -1,10 +1,10 @@
 <template>
    <nav>
        <v-container>
-            <v-toolbar flat app>
+            <v-toolbar flat app prominent> 
                 <v-app-bar-nav-icon class="hidden-md-and-up primary--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-toolbar-title class="text-uppercase hidden-xs-only text-start">
-                    <a href="/"><span class="primary--text title text-lowercase">cambridge energy advisors</span></a>
+                    <a href="/"><span class="primary--text display-1 text-lowercase">cambridge energy advisors.</span></a>
                 </v-toolbar-title>
                 
                 <v-spacer></v-spacer>
@@ -71,5 +71,6 @@ export default {
     a{
         text-decoration: none;
     }
+
 </style>>
     
