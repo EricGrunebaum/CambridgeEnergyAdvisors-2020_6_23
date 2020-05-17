@@ -8,16 +8,12 @@
             <v-col class="text-left">
                 <span class="text-white">Cambridge Energy Advisors</span>
                  <p class="grey-text text-lighten-4">
-                    Principal: Eric Grunebaum <a href="mailto:egrunebaum@aol.com"><v-icon>mdi-email</v-icon></a> <br>
-                    M: 617-304-5824 <a href="tel:617-304-5824"><v-icon>mdi-phone</v-icon></a><br>                                        
+                    Principal: Eric Grunebaum 
+                    <br>
+                    M: 617-304-5824 
                 </p>
-<<<<<<< HEAD
-                
-                
-=======
                 <a href="mailto:eric@cambridgeenergyadvisors.com"><v-icon>mdi-email</v-icon></a>
                 <a href="tel:617-304-5824"><v-icon>mdi-phone</v-icon></a>
->>>>>>> alt-home
             </v-col>
             <v-col class="text-left">
                  <p class="grey-text text-lighten-4">
