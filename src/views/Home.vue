@@ -64,9 +64,9 @@ export default {
                   route: `/about`
                 },
                 {
-                  head: `business development ~ clean energy &amp; resource efficiency`,
+                  head: `business development ~ clean energy & resource efficiency`,
                   body: `Our approach to business development is grounded in a 20 year foundation of science communications for documentary films and science museums. Communicating your mission powerfully with an economy of words is critical to engaging audiences, whether investors, partners or customers.`,
-                  source: require(`../../public/boston.jpg`),
+                  source: require(`../../public/business_plant.jpg`),
                   route: `/about`
                 },
               ],
