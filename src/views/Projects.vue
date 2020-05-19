@@ -12,21 +12,6 @@
       <v-col cols="12" sm="6" md="6" lg="4" v-for="study in studies" :key="study">
         
 
-        <v-badge
-          :color="study.color"
-          :content="study.category"
-          overlap
-          
-          offset-x="370"
-          offset-y="10"
-          :style="{'max-width': maxText}
-          "
-        
-        
-          
-          
-        >
-
 
           <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"
                   max-width="800"
@@ -35,20 +20,28 @@
         
           <!-- <h2 class="display-1 hidden-sm-and-down" :id="study.name">{{ study.title }}</h2> -->
         
+            <router-link :to="{ name: 'SingleProject', params: {id:study.id} }">
             <v-parallax :src="study.photo" alt="" contain="" class="align-center justify-center white--text">
+            <div class="chip">
+            <v-chip
+            label
+            :color="study.color"
+            class="text-center"
             
+            >{{ study.category }}</v-chip>
+            </div>
+        
               
               <v-card-title class="hidden-xs-only text-break" style="max-width: 400px; word-break: normal;" :id="study.name">{{ study.title }}
               </v-card-title>
               <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up" :id="study.name">{{ study.title }}</v-card-title>
             </v-parallax>
-            <router-link :to="{ name: 'SingleProject' }"></router-link>
-            
+            </router-link>
         
           </v-card>
           
 
-        </v-badge>
+        
       </v-col> 
       
     </v-row>
@@ -59,14 +52,16 @@
 
 export default {
   
-  data: () => {
+  data(){
     return {   
       dialog: false,
+      
       studies: [
                   //Sector 1
                   { 
-                    badgeColor: 'primary',              
-                    category: 'Fundraising & Impact Investment',
+                    id: 1,
+                    color: 'primary',              
+                    category: 'fundraising & impact investment.',
                     title: `Solar Tax Equity and Bond fund`,
                     photo: require('../../public/solar_array1.png'),
                       paragraphs: [
@@ -77,8 +72,9 @@ export default {
                              ],
                   },
                   { 
+                    id: 2,
                     color: 'primary',              
-                    category: 'Fundraising',
+                    category: 'fundraising & impact investment.',
                     title: `Series C Raise for Clean Energy Hardware Company`,
                     photo: require('../../public/windmills.png'),
                       paragraphs: [
@@ -89,6 +85,7 @@ export default {
                   },
                   //Sector 2
                   { 
+                    id: 3,
                     color: 'orange',              
                     category: `project development.`,
                     title: `Commercial Solar in Harvard Square, Cambridge `, 
@@ -100,6 +97,7 @@ export default {
                             ],
                   },
                   { 
+                    id: 4,
                     color: 'orange',         
                     category: `project development.`,
                     title: `Brownfield to Accessible Natural Reservation`, 
@@ -112,9 +110,10 @@ export default {
                             ],
                   },
                   //Sector 3
-                  { 
+                  {
+                    id: 5, 
                     color: 'blue',                
-                    category: 'Business Development',
+                    category: 'business development.',
                     title: `European Pharma Catalyst/Green Chemistry Firm`, 
                     photo: require('../../public/atoms1.png'),
                     paragraphs: [
@@ -128,11 +127,18 @@ export default {
       
     }
   },
+ 
   components: {
     
   }
 }
 </script>
 <style scoped>
-  
+  a {
+    text-decoration: none;
+  }
+  .chip{
+    position: absolute;
+    transform: translateY(-220px);
+  }
 </style>
