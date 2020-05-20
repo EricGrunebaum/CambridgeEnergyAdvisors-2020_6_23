@@ -1,7 +1,12 @@
 <template>
 <div>
-    <h2>{{ id }}</h2>
-    
+    <h2>{{ projectId }}</h2>
+    <ul>
+        <li>
+            {{ project.title }}
+            {{ project.body }}
+        </li>
+    </ul>
     
         
 </div>
@@ -10,15 +15,21 @@
 
 export default {
     data(){
-        return {
-            
-            id: this.$route.params.id,
-            
-        
-        
-        }
-        
+        return {            
+            projectId: this.$route.params.id,
+        }      
     },
 
+computed: {
+    // projects(){
+    //     return this.$store.state.projects;
+    // }
+
+      project(){
+        return this.$store.state.projects.find(
+            project => project.id === this.projectId
+        )
+    }
+}
 }
 </script>
