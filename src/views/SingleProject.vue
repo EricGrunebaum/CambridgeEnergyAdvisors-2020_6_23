@@ -40,13 +40,13 @@ computed: {
 
 <style scoped>
     .single-projects {
-        animation: fadeInAnimation ease 2s;
+        animation: fadeInAnimation ease 1s;
         
     }
     @keyframes fadeInAnimation{
         0% {
             opacity: 0;
-            transform: translateY(3rem);
+            transform: translateY(1rem);
         }
         100% {
             opacity: 1;
