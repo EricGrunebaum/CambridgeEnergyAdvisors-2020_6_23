@@ -5,7 +5,7 @@
                 
             >
                     <v-expansion-panel-header class="primary">
-                            <span class="title mx-2">{{ title }}</span>
+                            <span class="mx-2">{{ title }}</span>
                             <span class="mx-2 text-right align-text-center"> {{ date }} </span>
                     </v-expansion-panel-header>
                 <v-expansion-panel-content class="text-left mt-3">               

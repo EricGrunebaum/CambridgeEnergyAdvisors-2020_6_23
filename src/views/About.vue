@@ -31,10 +31,7 @@ export default {
   data(){
     return {
       images: {
-        a: require('../../public/eric1.png'),
-        b: require('../../public/eric2.png')
-        
-        
+        a: require('../../public/eric1.png'),    
       },
       contents: {
         a: `Cambridge Energy Advisors and principal Eric Grunebaum, provide a broad consultancy focused on developing clean energy projects, raising investment for resource efficiency companies and impact funds and providing critical business development strategies that moves our energy and resource systems towards transformational clean energy and efficiency improvements.`,
