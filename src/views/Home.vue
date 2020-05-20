@@ -50,6 +50,7 @@ export default {
   },
   data(){
     return {
+      
       blurbs: [
                 {              
                   head: `fundraising & impact investment.`,

@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 new Vue({
   store: store,
   created() {
-    AOS.init({ disable: "phone" });
+    AOS.init({  });
   },
   router,
   vuetify,
