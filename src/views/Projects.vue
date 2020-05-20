@@ -45,6 +45,9 @@
       </v-col> 
       
     </v-row>
+    <div v-for="project in projects" :key="project">
+      <span>{{ project.title }}</span>
+    </div>
   </v-container>
   </div>    
 </template>
@@ -55,6 +58,7 @@ export default {
   data(){
     return {   
       dialog: false,
+      projects: [],
       
       studies: [
                   //Sector 1
@@ -62,7 +66,7 @@ export default {
                     id: 1,
                     color: 'primary',              
                     category: 'fundraising & impact investment.',
-                    title: `Solar Tax Equity and Bond fund`,
+                    title: `Solar Tax Equity and Bond Fund`,
                     photo: require('../../public/solar_array1.png'),
                       paragraphs: [
                             `For this startup solar fund, we helped broaden their investor base and bring in a broad network of high net-worth, family office and foundation investors, raising total of $2.25 million which allowed them to build approximately 1 megawatt of commercial scale solar for a broad spectrum of non-profits, REITs and other businesses.`,
@@ -125,9 +129,9 @@ export default {
                   },
                 ]
       
+    
     }
   },
- 
   components: {
     
   }
