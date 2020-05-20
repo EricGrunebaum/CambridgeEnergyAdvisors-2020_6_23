@@ -148,4 +148,19 @@ export default {
     position: absolute;
     transform: translateY(-220px);
   }
+  .projects {
+        animation: fadeInAnimation ease 1s;
+        
+    }
+    @keyframes fadeInAnimation{
+        0% {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 </style>

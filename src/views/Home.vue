@@ -101,4 +101,19 @@ export default {
     font-family: Montserrat, cursive;
     color: rgba(0, 0, 0, .8)
   }
+  .home {
+        animation: fadeInAnimation ease 2s;
+        
+    }
+    @keyframes fadeInAnimation{
+        0% {
+            opacity: 0;
+            transform: translateY(3rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 </style>

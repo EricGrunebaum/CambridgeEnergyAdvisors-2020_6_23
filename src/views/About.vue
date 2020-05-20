@@ -9,18 +9,18 @@
         <blockquote class="blockquote">{{ content }}</blockquote>
     </div>
     </v-container>
-    <v-col justify-content="space-around" class="hidden-xs-only">
+    <v-col justify-content="space-around" class="hidden-xs-only" >
         <v-avatar size="144">
-          <v-img :src="images.a" aspect-ratio="1" alt=""></v-img>
+          <v-img :src="images.a" aspect-ratio="1" alt="" data-aos="fade-in" data-aos-duration="2000"></v-img>
         </v-avatar>
       </v-col>
-      <v-col justify-content="space-around" class="hidden-sm-and-up">
+      <v-col justify-content="space-around">
         <!-- <v-avatar size="72">
           <v-img :src="images.a" aspect-ratio="1" alt=""></v-img>
         </v-avatar> -->
   
-        <v-avatar size="72">
-        <v-img :src="images.a"></v-img>
+        <v-avatar size="72" class="hidden-sm-and-up">
+        <v-img :src="images.a" data-aos="fade-in" data-aos-duration="2000"></v-img>
         </v-avatar>
       </v-col>
       <sub><em>Eric Grunebaum, Principal</em></sub>
@@ -44,5 +44,18 @@ export default {
 }
 </script>
 <style scoped>
-  
+    .about {
+        animation: fadeInAnimation ease 1s;
+        
+    }
+    @keyframes fadeInAnimation{
+        0% {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 </style>
