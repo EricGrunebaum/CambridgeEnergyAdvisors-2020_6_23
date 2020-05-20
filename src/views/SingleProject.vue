@@ -6,7 +6,9 @@
     <article v-for="paragraph in project.paragraphs" :key="paragraph" class="text-left blockquote">{{ paragraph }}<br><br></article>
     <img :src="project.photo" alt="" data-aos="fade-in" data-aos-once="true">
    
-   <v-btn color="primary" outlined :to="{ name: 'projects' }" class="ma-6">Back to Projects <v-icon>mdi-chevron-right</v-icon></v-btn>
+   <v-btn color="primary" outlined :to="{ name: 'SingleProject', params: {id:projectId-1} }" class="ma-6"><v-icon>mdi-chevron-left</v-icon>Previous Project</v-btn>
+   <v-btn color="primary" outlined :to="{ name: 'projects' }" class="ma-6">Back to Projects </v-btn>
+   <v-btn color="primary" outlined :to="{ name: 'SingleProject', params: {id:projectId+1} }" class="ma-6">Next Project <v-icon>mdi-chevron-right</v-icon></v-btn>
    
     
    

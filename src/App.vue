@@ -2,7 +2,7 @@
   <v-app class="grey lighten-4"> <!--Root component-->
    <Navbar />
     <v-content class="text-center ma-10">      
-        <router-view></router-view>
+        <router-view :key="$route.path"></router-view>
     </v-content>
     <Footer />
   </v-app>
