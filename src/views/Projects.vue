@@ -10,7 +10,7 @@
       
         
       
-      <v-col cols="12" sm="6" md="6" lg="4" >
+      <v-col cols="12" sm="6" md="6" lg="4" v-for="project in projects" :key="project">
         
 
 
@@ -20,7 +20,7 @@
                   >
           
 
-            <router-link v-for="project in projects" :key="project" :to="{ name: 'SingleProject', params: {id:project.id} }">
+            <router-link :to="{ name: 'SingleProject', params: {id:project.id} }">
               <v-parallax :src="project.photo" alt="" contain="" class="align-center justify-center white--text">
               <div class="chip">
               <v-chip
