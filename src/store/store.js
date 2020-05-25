@@ -5,6 +5,54 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
     state: {
+
+    // ../views/Home.vue
+
+
+        homeContents: [
+            {              
+                head: `fundraising & impact investment.`,
+                body: `Our approach to investment focuses on providing great value for funds, companies and investors. Impact investment opportunities do not require lowering financial returns to generate positive environmental or social values, indeed multiple studies indicate the reverse to be true. Holding the FINRA Series 82 + 63 licenses, and working with team of partners to source deals, we connect investors to opportunities while sourcing capital for companies and funds focusing on clean energy and resource efficiency.`,
+                source: require(`../../public/trees.jpg`),
+                route: `/about`
+                },
+                {
+                head: `project development – solar,  commercial energy efficiency & environmental justice.`,
+                body: `Our project development work focuses on developing and funding commercial scale solar and energy efficiency upgrades along with pro bono environmental justice work. We work with non-profit and for-profit entities bringing technical expertise, sources of off-balance sheet funding when needed, visioning and community/stakeholder engagement to help advance profitable projects that increase sustainability.`,
+                source: require(`../../public/energy_circle.jpg`),
+                route: `/about`
+                },
+                {
+                head: `business development ~ clean energy & resource efficiency`,
+                body: `Our approach to business development is grounded in a 20 year foundation of science communications for documentary films and science museums. Communicating your mission powerfully with an economy of words is critical to engaging audiences, whether investors, partners or customers.`,
+                source: require(`../../public/office_window.jpg`),
+                route: `/about`
+            },
+            
+        ],
+
+        cases: [
+        {
+          title: `project: solar tax equity and bond fund`,
+          body: `For this startup solar commercial fund, we helped expand their investor base, bringing in our network of high net-worth, family office and foundation investors, raising total of $2.25 million. This funding in turn, allowed them to build ~1 megawatt of rooftop solar for a broad spectrum of non-profits, schools, houses of worship, REITs and other businesses while generating great returns for investors.`,
+          route: `/projects`,
+        },
+        {
+          title: `project: commercial solar in harvard square, cambridge`,
+          body: `This commercial solar array on a signficant block in Harvard Square has three distinct phases – first is a traditional flat roof solar array, second is a publicly visible solar array on a rooftop mechanical structure and finally, will be translucent panels mounted above a dramatic atrium space, providing both shading properties and power generation.`,
+          route: `/projects`,
+      
+        },
+        {
+          title: `project: european pharma catalyst/green chemistry firm`,
+          body: `For this EU co., entering the US market through the globally critical Kendall Square pharma cluster was the key to gaining market share for its world-leading catalysts that reduce toxic solvents and the energy required to manufacture pharmaceuticals.`,
+          route: `/projects`,
+      
+        },
+        ],
+
+
+    // ../views/Projects.vue && ../views/SingleProject.vue
         projects: [
             {
                 
@@ -71,6 +119,118 @@ export const store = new Vuex.Store({
                         
                         ],
                 },
-        ]
+        ],
+
+    // ../views/About.vue
+        about: {
+            images: {
+                a: require('../../public/eric1.jpg'),    
+            },
+            contents: {
+                a: `Cambridge Energy Advisors and principal Eric Grunebaum, provide a broad consultancy focused on developing clean energy projects, raising investment for resource efficiency companies and impact funds and providing critical business development strategies that moves our energy and resource systems towards transformational clean energy and efficiency improvements.`,
+                b: `Through Bequia Securities, we help connect investors to opportunities that allow high net-worth individuals, family offices, foundations and endowments to financially benefit from the systemic changes which are underway throughout our resource and energy systems and will continue on that trajectory for the coming decades.`,
+                c: `Our project development business focuses on building-scale clean energy and efficiency projects and sourcing capital to fund them in cases where the building owner – whether non-profit, school or commercial – may have different capital priorities. We also help unlock tax benefits for non-tax paying entities.`,
+                d: `Our broad experience and visibility into these related domains, from project development, business development, communications and fundraising – from both the investor’s and recipient’s side of table – provides us with a valuable perspective and insight into catalyzing change through the worlds of business and investment.`
+          }
+        },
+
+    // ../views/Events.vue
+        events:{
+            upcomingEvents: [
+                {
+                date: 'Oct 6, 2020',
+                role: `Curator & Moderator`,
+                title: `Flipping the Switch: Are Oil & Gas Companies Evolving, or are they Holding Up Climate Progress? Boston Area Sustainability Group: Oct. 2020`,
+                body: `The spotlight is on oil & gas companies and their progress, or lack-thereof, on working towards decarbonization. Our lead speaker will be Dr. Peter Frumhoff, Director of Science & Policy and Chief Climate Scientist at the Union of Concerned Scientists and coauthor of the annual UCS “Climate Accountability Scorecard”, subtitled “Insufficient Progress from Major Fossil Fuel Companies.”`,
+                link: `https://basgdotorg.wordpress.com/calendar/flipping-the-switch-are-energy-and-utility-companies-evolving`
+                }
+            ],
+            priorEvents: [
+                {
+                date: `2020`,
+                role: `Writer`,
+                title: `Conservation Law Foundation, Why I Give`,
+                body: `A brief essay on my long-standing interest in environmentalism and strong support for the Conservation Law Foundation.`,
+                link: `https://www.clf.org/publication/conservation-matters-spring-2020/`
+                },
+                {
+                date: `2019`,
+                role: `Curator & Moderator`,
+                title: `Owning It! Sustainability and Worker Cooperatives, Boston Area Sustainability Group`,
+                body: `An evening featuring leaders in the growing field of worker-owned-cooperatives and employee stock ownership plan companies focused on sustainability.`,
+                link: `https://basgdotorg.wordpress.com/archive/owning-it-sustainability-and-worker-cooperatives/`
+                },
+                {
+                date: `2019`,
+                role: `Curator & Moderator`,
+                title: `Put Your Money Where It Matters: A Practical Intro to Impact Investment for Individuals, Boston Area Sustainability Group`,
+                body: ``,
+                link: `https://basgdotorg.wordpress.com/archive/put-your-money-where-it-matters/`
+                },
+                {
+                date: `2018`,
+                role: `Writer`,
+                title: `Brownfields, Boston Area Sustainability Group`,
+                body: ``,
+                link: `https://basgdotorg.wordpress.com/archive/brownfields/`
+                },
+                {
+                date: `2018`,
+                role: `Curator & Speaker`,
+                title: `Climate Change Action Panel, Emmanuel College`,
+                body: ``,
+                link: ``
+                },
+                {
+                date: `2017`,
+                role: `Curator & Moderator`,
+                title: `Clearing the Air ~ Carbon and Health, Boston Area Sustainability Group`,
+                body: ``,
+                link: ``
+                },
+                {
+                date: `2016`,
+                role: `Curator & Moderator`,
+                title: `Carbon Realities, Boston Area Sustainability Group`,
+                body: ``,
+                link: `https://basgdotorg.wordpress.com/archive/carbon_realities/`
+                },
+                {
+                date: `2016`,
+                role: `Curator & Moderator`,
+                title: `The Clean Energy Transition, Boston Area Sustainability Group`,
+                body: ``,
+                link: ``
+                },
+                {
+                date: `2014`,
+                role: `Curator & Speaker`,
+                title: `Screening “The Last Mountain” and discussion with professor Tina Grotzer, hosted by Harvard Graduate School of Education Green Team, the Office for Sustainability, and the Faculty of Arts and Sciences' Green Program`,
+                body: ``,
+                link: ` https://green.harvard.edu/events/last-mountain-screening-and-talk`
+                },
+                {
+                date: `2012`,
+                role: `Curator & Speaker`,
+                title: `Screening “The Last Mountain” and panel on “The True Cost of Energy: Coal”, Hosted by Cambridge City Councilor Marjorie Decker `,
+                body: ``,
+                link: `www.clf.org/blog/join-clf-at-a-free-screening-of-the-last-mountain-on-wednesday-may-9-in-cambridge-ma/`
+                },
+                {
+                date: `2012`,
+                role: `Curator & Speaker`,
+                title: `Screening “The Last Mountain”, Sustainability Film Series, Phillips Exeter Academy with Conservation Law Foundatio`,
+                body: `A brief essay on my long-standing interest in environmentalism and strong support for the Conservation Law Foundation.`,
+                link: `www.clf.org/blog/join-clf-at-a-free-screening-of-the-last-mountain-in-exeter-nh-on-may-4th/`
+                },
+                {
+                date: `2009`,
+                role: `Writer`,
+                title: `“The main reason to raise the gas tax”, OpEd, Boston Globe`,
+                body: `OpEd making the environmental and climate case for raising the gas tax.`,
+                link: `http://archive.boston.com/bostonglobe/editorial_opinion/oped/articles/2009/05/25/the_main_reason_to_raise_the_gas_tax/`
+                },
+            ]
+        }
     }
 })
