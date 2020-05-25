@@ -1,11 +1,18 @@
 <template>
     <div class="text-center">
-    <span class="d-flex justify-center">Contact
-        <v-icon 
+        <div class="d-flex flex-column"
         @click="sheet = !sheet">
-            mdi-chevron-up
-        </v-icon>
-    </span>
+            <span class="mt-4 mb-2"> 
+                <strong> 
+                <v-icon>
+                    mdi-chevron-up
+                </v-icon>
+                </strong>
+            </span>
+            <span>
+                <strong>Contact</strong>
+            </span>
+        </div>
     <v-bottom-sheet v-model="sheet">
       <v-sheet class="text-center" height="">
         <v-icon
@@ -18,8 +25,8 @@
             <v-row class="text-left">
                 <span class="text-white">Cambridge Energy Advisors</span>
                  <p class="grey-text text-lighten-4">
-                    Principal: Eric Grunebaum<br>
-                    M: 617-304-5824<br>                                        
+                    Principal: Eric Grunebaum <a href="mailto:eric@cambridgeenergyadvisors.com"><v-icon>mdi-email</v-icon></a><br>
+                    M: 617-304-5824 <a href="tel:617-304-5824"><v-icon>mdi-phone</v-icon></a><br>                                        
                 </p>
             </v-row>
             <v-divider></v-divider>
@@ -53,5 +60,7 @@ export default {
 }
 </script>
 <style scoped>
-
+    a{
+        text-decoration: none;
+    }
 </style>

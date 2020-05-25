@@ -1,7 +1,7 @@
 <template>
     <v-footer
       padless
-      class="font-weight-light primary"
+      class="font-weight-light primary justify-center"
     >
     <!-- Social media? -->
     <v-container class="d-none d-sm-flex text-center">
@@ -31,7 +31,7 @@
                 </p>
             </v-col>
     </v-container>
-    <mobile-footer class="hidden-sm-and-up"></mobile-footer>
+    <mobile-footer  class="hidden-sm-and-up"></mobile-footer>
     <v-container class="d-flex text-center">
         <v-col>{{ new Date().getFullYear() }} — <strong>Cambridge Energy Advisors</strong></v-col>
     </v-container>
