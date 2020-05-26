@@ -60,7 +60,7 @@ export const store = new Vuex.Store({
                  color: 'primary',              
                  category: 'fundraising & impact investment.',
                  title: `Solar Tax Equity and Bond Fund`,
-                 photo: require('../../public/solar_array1.png'),
+                 photo: require('../../public/solar_array.jpg'),
                    paragraphs: [
                          `For this startup solar fund, we helped broaden their investor base and bring in a broad network of high net-worth, family office and foundation investors, raising total of $2.25 million which allowed them to build approximately 1 megawatt of commercial scale solar for a broad spectrum of non-profits, REITs and other businesses.`,
                          `The thesis for this evergreen solar development fund is a strong focus on commercial rooftops of all kinds where solar progress has been stymied by complexity and uniqueness of each roof. While utility scale solar and residential solar have benefited from institutional investment, commercial scale rooftops have generally lagged due to challenges with underwriting and the broad diversity of building types. Seeing this as a virtue, the fund has worked to create strong underwriting standards and efficient transactional platforms to help democratize the development of solar on rooftops where the positive impacts are multiple – jobs created, economic development generated and of course climate emissions reduced.`,
@@ -86,7 +86,7 @@ export const store = new Vuex.Store({
                 color: 'orange',              
                 category: `project development.`,
                 title: `Commercial Solar in Harvard Square, Cambridge `, 
-                photo: require('../../public/solar_workers.png'),
+                photo: require('../../public/solar_workers.jpg'),
                 paragraphs: [
                         `For an established commercial landlord in Harvard Square we’ve worked with the managing partner to envision the economic, sustainable and aesthetic potential of a complex series of connected solar phases, while engaging top engineers and running an RFP to select high quality installation partners.`,
                         `The three solar arrays for a set of solar arrays which will provide revenue, significant tax benefits and sustainability branding for the management company. The array on the roof-top structure will also carry forward the original intentions of the structure which supported a cutting edge solar thermal array when it was completed in 1980 by the managing partner’s father who developed and built the structure. The solar thermal array was ahead of its time and so was eventually removed, however we now have the opportunity to replace it with a state-of-the-art solar array which will be visible throughout Harvard Square. The atrium has its own story as the space has had too much heat gain in the summer months, making it less functional than it could otherwise be.`,
@@ -98,7 +98,7 @@ export const store = new Vuex.Store({
               color: 'orange',         
               category: `project development.`,
               title: `Brownfield to Accessible Natural Reservation`, 
-              photo: require('../../public/swimming1.png'),
+              photo: require('../../public/swimming.jpg'),
               paragraphs: [
                       `Once an open pit mine where rich clay deposits were extracted until the late 1800s, “Jerry’s Pit” filled with water and was transformed into a popular local swimming hole for nearly 100 years. However in 1961 it was fenced-off and public access has now been prohibited for 60 years while some of the site was polluted by the infamous W.R. Grace chemical company. Restoring the site for safe public access, while enhancing the natural ecosystem provides an unusual opportunity for a new natural reservation adjacent to a large environmental justice community.`,
                       `Fences have protected the community from toxic waste, including asbestos left in the soil by W.R Grace, but they have left a permanent blight in a neighborhood now settled by a diverse population of ~4,000 affordable housing community members who likely do not have easy access to natural areas. Wildlife has flourished in the pond and its environs in the last half-century and a sensitive, safe re-opening of the site via boardwalks as well as the addition of a newly created wetland, an off-road bike-way and nature paths, could create a rare opportunity for enhancing habitat and reconnecting the local community with nature.`,
@@ -111,7 +111,7 @@ export const store = new Vuex.Store({
                 color: 'blue',                
                 category: 'business development.',
                 title: `European Pharma Catalyst/Green Chemistry Firm`, 
-                photo: require('../../public/atoms1.png'),
+                photo: require('../../public/atoms.jpg'),
                 paragraphs: [
                         `For this EU co., entering the US market through the unparalleled Kendall Square pharma cluster was critical to gaining market share for its world-leading catalysts that reduce toxic solvents and energy required to manufacture pharmaceuticals.`,
                         `Entering foreign markets skillfully requires clear communication, access to markets and sales channels and a genuine presence in the region. The raw materials of a great technology, the science undergirding it and the results to back it up is not sufficient. Transforming the dense, scientific knowledge into a compelling narrative that grabs people’s attention, and then getting in front of the right eyes is critical.`,
