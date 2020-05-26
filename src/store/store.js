@@ -74,7 +74,7 @@ export const store = new Vuex.Store({
                 color: 'primary',              
                 category: 'fundraising & impact investment.',
                 title: `Series C Raise for Clean Energy Hardware Company`,
-                photo: require('../../public/windmills.png'),
+                photo: require('../../public/windmills.jpg'),
                 paragraphs: [
                         `For a mature clean energy hardware startup based in Colorado, we’ve built relationships with investors on the East Coast, gaining them access to capital markets, primarily venture capital firms and potential corporate strategic partners/investors which has been critical for raising their profile and generating new investor relationships.`,
                         `After a dozen years of engineering and development and with three Small Business Innovation Research grants from EPA, DOE and NSF totaling $2.7M, this company is ready to commercialize their fifth generation, modular, 25kW waste-heat-to-power, advanced Stirling engine design. Full scale pilot engines have been tested by the Army Corps’ Cold Regions Research & Engineering Lab verifying efficiencies up to 30% for an engine generating zero-emissions power from excess heat, a free, wasted fuel source. Also tested by a multinational electrical equipment manufacturer and generating R&D investment from a global cement company, the technology is ready for commercial piloting, strategic partnerships and IP licensing.`,
