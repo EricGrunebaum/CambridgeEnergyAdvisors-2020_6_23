@@ -62,6 +62,10 @@ export default {
     font-family: Montserrat, cursive;
     color: rgba(0, 0, 0, .8)
   }
+
+  .hero{
+    font-size: 5rem;
+  }
   .home {
         animation: fadeInAnimation ease 2s;
         

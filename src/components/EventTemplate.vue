@@ -1,8 +1,7 @@
 <template>
     <v-row justify="center">
         <v-expansion-panels accordion multiple hover popout >
-            <v-expansion-panel
-                
+            <v-expansion-panel class="panel"
             >
                     <v-expansion-panel-header class="primary">
                             <span class="mx-2">{{ title }}</span>
@@ -28,5 +27,7 @@ export default {
 }
 </script>
 <style scoped>
-    
+    .panel {
+        margin: .15rem;
+    }
 </style>

@@ -5,17 +5,26 @@
       <h1 class="display-3 hidden-xs-only ma-6">About Us</h1>
       <h3 class="display-2 hidden-sm-and-up">About Us</h3>
     
+    <div v-for="content in about.lead1" :key="content" class="text-left ma-4">
+        <p class="blockquote">{{ content }}</p>
+    </div>
+    <div v-for="content in about.lead2.a" :key="content" class="text-left ma-4">
+        <p class="blockquote lead hidden-xs-only">{{ content }}</p>
+    </div>
+    <div v-for="content in about.lead2.a" :key="content" class="text-left ma-4">
+        <p class="blockquote hidden-sm-and-up">{{ content }}</p>
+    </div>
     <div v-for="content in about.contents" :key="content" class="text-left ma-4">
         <blockquote class="blockquote">{{ content }}</blockquote>
     </div>
     </v-container>
     <v-col justify-content="space-around" class="hidden-xs-only" >
-        <v-avatar size="144">
+        <v-avatar size="200">
           <v-img :src="about.images.a" aspect-ratio="1" alt="" data-aos="fade-in" data-aos-duration="2000"></v-img>
         </v-avatar>
       </v-col>
       <v-col justify-content="space-around">  
-        <v-avatar size="72" class="hidden-sm-and-up">
+        <v-avatar size="144" class="hidden-sm-and-up">
         <v-img :src="about.images.a" data-aos="fade-in" data-aos-duration="2000"></v-img>
         </v-avatar>
       </v-col>
@@ -50,5 +59,8 @@ export default {
             opacity: 1;
             transform: translateY(0);
         }
+    }
+    .lead {
+      text-indent: 2rem;
     }
 </style>
