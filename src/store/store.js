@@ -125,6 +125,23 @@ export const store = new Vuex.Store({
                         
                         ],
                 },
+                
+             {
+                id: 6, 
+                color: 'blue',                
+                category: 'business development.',
+                title: `Clean Energy Incubator Expansion`, 
+                photo: require('../../public/desk-plants.jpg'),
+                paragraphs: [
+                        `North America’s largest business incubator 100% focused on piloting and commercializing hardware solutions addressing resource efficiency challenges (aka cleantech) began when four MIT grads found a garage to share. What started as a simple space-sharing enterprise organically grew over five years to a thriving community of over 30 startup companies sharing an industrial facility split between lab space and shared desk areas.`,
+                        `Expanding into the incubator’s third facility, a 30,000 square foot factory floor, increasing interaction and curated collaboration, support, guidance and mentoring from strategic multinational partners, as well as state economic development agencies, clean energy thought-leaders and investors helped create a vibrant and successful community of startups in a challenging sector, one which requires long-timelines for iterative hardware piloting and market development.`,
+                        `The demand from the cleantech startup community kept outpacing the available space and so the incubator began planning its fourth facility – a tripling in scale into a transformed factory building. To assist in this goal they sought our assistance in an effort to broaden their base of strategic partners and foundation supporters. Our work focused on helping refine the narrative to generate interest from prospective partners, both companies and foundations, and then bringing these prospects into the incubator to consider partnering and sponsorship opportunities. Prospective companies we brought in included: Akamai Technologies, SunPower Corporation, EMC, Prodrive Technologies, NRG, Anbaric Development Partners along with foundations including the Merck Family Fund and The Boston Foundation.`,
+                        `Having now completed its expansion into a renovated 100,000 square feet facility – a dramatically transformed manufacturing building – the incubator has succeeded as a world-leading catalyst for transforming energy and resource systems by supporting and nurturing the entrepreneurs and companies spearheading this effort. Creating new technologies and new companies, new markets and expanded employment in this transformative sector, the incubator has become an important engine for driving worldwide technology and systems change.`
+                        
+                        ],
+                },
+                
+
         ],
 
     // ../views/About.vue
@@ -157,94 +174,187 @@ export const store = new Vuex.Store({
                 {
                 date: 'Oct 6, 2020',
                 role: `Curator & Moderator`,
-                title: `Flipping the Switch: Are Oil & Gas Companies Evolving, or are they Holding Up Climate Progress? - Boston Area Sustainability Group: Oct. 2020`,
-                body: `The spotlight is on oil & gas companies and their progress, or lack-thereof, on working towards decarbonization. Our lead speaker will be Dr. Peter Frumhoff, Director of Science & Policy and Chief Climate Scientist at the Union of Concerned Scientists and coauthor of the annual UCS “Climate Accountability Scorecard”, subtitled “Insufficient Progress from Major Fossil Fuel Companies.”`,
-                link: `https://basgdotorg.wordpress.com/calendar/flipping-the-switch-are-energy-and-utility-companies-evolving`
+                title: `A Burning Question: Are Oil & Gas Companies Really Evolving?`,
+                host: `Boston Area Sustainability Group`,
+                body: `The spotlight is on oil & gas companies and their progress, or lack-thereof, in transforming their businesses towards decarbonization. Our lead speaker will be Dr. Peter Frumhoff, Director of Science & Policy and Chief Climate Scientist at the Union of Concerned Scientists and coauthor of the annual UCS “Climate Accountability Scorecard”, subtitled “Insufficient Progress from Major Fossil Fuel Companies.”`,
+                link: `https://basgdotorg.wordpress.com/calendar/flipping-the-switch-are-energy-and-utility-companies-evolving/`
                 }
             ],
             priorEvents: [
                 {
                 date: `2020`,
-                role: `Writer`,
-                title: `Conservation Law Foundation, Why I Give`,
-                body: `A brief essay on my long-standing interest in environmentalism and strong support for the Conservation Law Foundation.`,
-                link: `https://www.clf.org/publication/conservation-matters-spring-2020/`
+                role: `Author`,
+                title: `Why I Give`,
+                host: `Conservation Law Foundation`,
+                body: `A brief essay on my life-long environmentalism and appreciation for the Conservation Law Foundation’s critical work in New England to protect, preserve and improve our region’s natural areas along with the broader community’s access to them.`,
+                link: `https://www.clf.org/how-you-can-help/why-we-give/eric-grunebaum/`
                 },
                 {
                 date: `2019`,
-                role: `Curator & Moderator`,
-                title: `Owning It! Sustainability and Worker Cooperatives - Boston Area Sustainability Group`,
-                body: `An evening featuring leaders in the growing field of worker-owned-cooperatives and employee stock ownership plan companies focused on sustainability.`,
+                role: `Speaker`,
+                title: `Clean Energy Climate Solutions Panel`,
+                host: `Solidarity for Climate Justice`,
+                body: `Gathering of physicians and health professionals asking: What would it look like to make change and get closer to a sustainable and just world focusing on energy, food, building decarbonization and environmental justice.`,
                 link: `https://basgdotorg.wordpress.com/archive/owning-it-sustainability-and-worker-cooperatives/`
                 },
                 {
                 date: `2019`,
                 role: `Curator & Moderator`,
-                title: `Put Your Money Where It Matters: A Practical Intro to Impact Investment for Individuals - Boston Area Sustainability Group`,
-                body: ``,
+                title: `Owning It! Sustainability and Worker Cooperatives`,
+                host: `Boston Area Sustainability Group, Cosponsored by Conscious Capitalism Boston`,
+                body: `An evening featuring thought leaders and leading enterprises in the growing field of worker-owned-cooperatives and employee stock ownership plan companies focused on sustainability.`,
+                link: `https://basgdotorg.wordpress.com/archive/owning-it-sustainability-and-worker-cooperatives/`
+                },
+                {
+                date: `2019`,
+                role: `Respondent & Rapporteur`,
+                title: `Blue-Green Infrastructure Colloquium`,
+                host: `Lincoln Institute of Land Policy`,
+                body: `Two day conference with practitioners and academics presenting and discussing nine early stage case assessments of leading, national, blue-green infrastructure efforts. Conference served as a “proof of concept” for a larger symposium on infrastructure, land and water in the age of climate change.`,
+                link: `Link> https://www.lincolninst.edu/`
+                },
+                {
+                date: `2019`,
+                role: `Curator & Moderator`,
+                title: `Put Your Money Where It Matters: A Practical Intro to Impact Investment for Individuals `,
+                host: `Boston Area Sustainability Group`,
+                body: `How can we as individuals or startups seeking funding participate in the rapidly growing impact investment ecosystem? This event featured first-hand, boots-on-the-ground stories of impact investment successes along with short pitches by principals of active offerings for aspiring impact investors.`,
                 link: `https://basgdotorg.wordpress.com/archive/put-your-money-where-it-matters/`
                 },
                 {
                 date: `2018`,
-                role: `Writer`,
-                title: `Brownfields - Boston Area Sustainability Group`,
-                body: ``,
+                role: `Speaker`,
+                title: `Brownfields: Rewriting Industrial Legacy from Brown to Green`,
+                host: `Boston Area Sustainability Group`,
+                body: `New England has an important industrial legacy, but one that has left behind a burden of contaminated land and water. These brownfields impede the ability of communities to grow and prosper, however successful clean-up and reinvestment in a site increases local tax base, spurs economic growth, reactivates existing infrastructure and removes pressure from open land, while improving and protecting the environment.`,
                 link: `https://basgdotorg.wordpress.com/archive/brownfields/`
                 },
                 {
                 date: `2018`,
-                role: `Curator & Speaker`,
-                title: `Climate Change Action Panel, Emmanuel College`,
-                body: ``,
+                role: `Speaker`,
+                title: `Climate Change Action Panel`,
+                host: `Emmanuel College`,
+                body: `A documentary film screening followed by a panel focused on how students and faculty at this small liberal arts college in Boston can translate their concerns about climate change into action.`,
                 link: ``
+                },
+                {
+                date: `2018`,
+                role: `Speaker`,
+                title: `Solar for Houses of Worship`,
+                host: `Jewish Climate Action Network`,
+                body: `Presentation on how houses of worship can move forward with solar projects in sync with their moral position in communities and how sourcing impact investment funds can help provide the upfront capital when needed.`,
+                link: `https://basgdotorg.wordpress.com/archive/carbon_realities/`
+                },
+                {
+                date: `2017`,
+                role: `Curator & Catalyst`,
+                title: `“Climate, air quality, and health benefits of a carbon fee-and-rebate bill in Massachusetts”`,
+                host: `Harvard Chan School of Public Health, Environmental Research Letters`,
+                body: `Study linking a proposed carbon pricing policy in Massachusetts with corollary health benefits. I initiated the study working with Harvard T. H. Chan School of Public Health scientists, collaborating with state legislators proposing the new policy, raising the initial funding and organizing the study’s public release at an event at The Boston Foundation.`,
+                link: `https://www.wwlp.com/news/study-adds-fuel-to-debate-over-carbon-fees/`
                 },
                 {
                 date: `2017`,
                 role: `Curator & Moderator`,
-                title: `Clearing the Air ~ Carbon and Health, Boston Area Sustainability Group`,
-                body: ``,
-                link: ``
+                title: `Clearing the Air: Carbon and Health`,
+                host: `Boston Area Sustainability Group`,
+                body: `Exploring the connections between health, climate change and fossil fuel burning providing participants with the tools to speak to and educate the public, employers, customers, friends, families… and especially elected officials on the topic.`,
+                link: `https://basgdotorg.wordpress.com/archive/clearing-the-air-carbon-and-health/`
+                },
+                {
+                date: `2017`,
+                role: `Speaker`,
+                title: `Screening “The Last Mountain” and discussion with WVa native and mountaintop removal activist Bo Webb.`,
+                host: `Green Cambridge, Somerville Climate Action, Mothers Out Front, Groundwork Somerville, 350MA and Fossil Free Somerville.`,
+                body: `Screening hosted by the leading place-based environmental organization in Cambridge which took place in neighboring Somerville and in support of both cities’ transitions towards greening their electricity supplies.`,
+                link: `https://www.facebook.com/events/the-rockwell/the-last-mountain-film-screening/130293991027053/`
+                },
+                {
+                date: `2017`,
+                role: `Curator`,
+                title: `Financial Innovation as the Key to Clean Energy & Efficiency Transformation`,
+                host: `Cambridge Innovation Center, Green Innovation Industry Night`,
+                body: `Clean energy and efficiency practices are often viewed as dependent on technological innovation, yet in an era of established technologies, the real catalyst is financial and business model innovation: using financing mechanisms and impact capital to turn stalled initiatives and “nice­to­haves” into actionable projects.`,
+                link: `https://environment.harvard.edu/events/2017-10-11-201500/cic-green-innovation-industry-night`
+                },
+                {
+                date: `2017`,
+                role: `Curator & Moderator`,
+                title: `Let’s Get Local: Attracting Capital to Local Energy Projects`,
+                host: `Climate Action Business Association`,
+                body: `Encouraging and empowering people to act locally binds together the fabric of a community. People build thriving communities when they invest locally and whole communities benefit when small businesses and investors recirculate their dollars in the local economy. A panel discussion on moving capital to local energy projects and building value in local economies.`,
+                link: `https://www.greentownlabs.com/event/lets-get-local-attracting-capital-local-energy-projects/`
                 },
                 {
                 date: `2016`,
                 role: `Curator & Moderator`,
-                title: `Carbon Realities, Boston Area Sustainability Group`,
-                body: ``,
+                title: `Carbon Realities`,
+                host: `Boston Area Sustainability Group, co-hosted by Boston College Center for Corporate Citizenship and Sustainable Roundtable, Inc.`,
+                body: `Carbon emissions play a major role in causing climate change yet the costs of burning fossil fuels are externalized by emitters. A more effective accounting for the impact of greenhouse gas emissions on our world would realign incentives towards solving the challenge of climate change.`,
                 link: `https://basgdotorg.wordpress.com/archive/carbon_realities/`
                 },
                 {
                 date: `2016`,
                 role: `Curator & Moderator`,
-                title: `The Clean Energy Transition, Boston Area Sustainability Group`,
-                body: ``,
-                link: ``
+                title: `Let’s Get Local: Attracting Capital to Local Energy Projects`,
+                host: `Climate Action Business Association`,
+                body: `Encouraging and empowering people to act locally binds together the fabric of a community. People build thriving communities when they invest locally and whole communities benefit when small businesses and investors recirculate their dollars in the local economy. A panel discussion on moving capital to local energy projects and building value in local economies.`,
+                link: `https://www.greentownlabs.com/event/lets-get-local-attracting-capital-local-energy-projects/`
+                },
+                {
+                date: `2016`,
+                role: `Curator & Speaker`,
+                title: `The Clean Energy Transition`,
+                host: `Boston Area Sustainability Group, co-hosted by the U.Mass. Boston Sustainable Solutions Lab and the Conservation Law Foundation`,
+                body: `Screening of the 2011 Sundance Film Festival pick, “The Last Mountain” followed by presentations on the realities of the fossil fuel economy and how we as citizens and communities can help accelerate the transition to a clean energy economy; the challenges triggered by the transition; and how communities, organizations and each of us can participate.`,
+                link: `https://basgdotorg.wordpress.com/archive/the-clean-energy-transition/`
+                },
+                {
+                date: `2015`,
+                role: `Speaker`,
+                title: `Screening “The Last Mountain”`,
+                host: `Old Oak Dojo`,
+                body: `Boston’s Old Oak Dojo is a unique space “where neighbors gather to rediscover how to create healthy and resilient communities – an experiment in dissolving the boundary between public and private providing a space for community to meet, learn, eat, celebrate, and play – and thereby restore our wholeness as citizens.” The Dojo was one of the first dozen buildings in the world to be certified by the Living Building Challenge.`,
+                link: `https://oldoakdojo.com/event/documentary-the-last-mountain/`
+                },
+                {
+                date: `2015`,
+                role: `Speaker`,
+                title: `Screening “The Last Mountain"`,
+                host: `Synapse Energy Economics`,
+                body: `Screening at Synapse Energy Economics, a research and consulting firm specializing in energy, economic and environmental topics and a leader in providing rigorous analysis of the electric power and natural gas sectors for public interest and governmental clients.`,
+                link: `www.synapse-energy.com`
                 },
                 {
                 date: `2014`,
                 role: `Curator & Speaker`,
-                title: `Screening “The Last Mountain” and discussion with professor Tina Grotzer, hosted by Harvard Graduate School of Education Green Team, the Office for Sustainability, and the Faculty of Arts and Sciences' Green Program`,
-                body: ``,
-                link: ` https://green.harvard.edu/events/last-mountain-screening-and-talk`
+                title: `Screening “The Last Mountain” and discussion with professor Tina Grotzer`,
+                host: `Harvard Graduate School of Education Green Team, the Office for Sustainability, and the Faculty of Arts and Sciences' Green Program`,
+                body: `Screening and Q+A with Professor Grotzer a cognitive and learning scientist who’s work at Harvard Education School’s Project Zero focuses on learning in formal and informal contexts, in particular on science education, sustainability and climate.`,
+                link: `https://green.harvard.edu/events/last-mountain-screening-and-talk`
                 },
                 {
                 date: `2012`,
                 role: `Curator & Speaker`,
-                title: `Screening “The Last Mountain” and panel on “The True Cost of Energy: Coal”, Hosted by Cambridge City Councilor Marjorie Decker `,
-                body: ``,
-                link: `www.clf.org/blog/join-clf-at-a-free-screening-of-the-last-mountain-on-wednesday-may-9-in-cambridge-ma/`
+                title: `Screening “The Last Mountain” and panel on “The True Cost of Energy: Coal”`,
+                host: `Hosted by Cambridge City Councilor Marjorie Decker`,
+                body: `Along with Cambridge City Councilor Marjorie Decker (now a State Representative) I co-organized this screening and discussion to share knowledge on the true costs of energy from coal. The discussion focused on health, human rights and environmental impacts while also touching on clean energy alternatives.`,
+                link: `http://environment.harvard.edu/events/2012-05-09/true-cost-energy-coal`
                 },
                 {
                 date: `2012`,
                 role: `Curator & Speaker`,
-                title: `Screening “The Last Mountain”, Sustainability Film Series, Phillips Exeter Academy with Conservation Law Foundation`,
-                body: `A brief essay on my long-standing interest in environmentalism and strong support for the Conservation Law Foundation.`,
+                title: `Screening “The Last Mountain”`,
+                host: `Sustainability Film Series, Phillips Exeter Academy with Conservation Law Foundation`,
+                body: `Screening in support of Conservation Law Foundation’s work to secure a clean energy future by completing the transition to a coal-free New England. With cleaner, cheaper alternatives driving coal out of the market and old coal plants closing their doors, New Hampshire was a critical battleground for CLF’s work, with (at the time of the event) two costly old coal power plants being kept alive by state policies and ratepayer subsidies.`,
                 link: `www.clf.org/blog/join-clf-at-a-free-screening-of-the-last-mountain-in-exeter-nh-on-may-4th/`
                 },
                 {
                 date: `2009`,
-                role: `Writer`,
-                title: `“The main reason to raise the gas tax”, OpEd, Boston Globe`,
-                body: `OpEd making the environmental and climate case for raising the gas tax.`,
+                role: `Author`,
+                title: `“The main reason to raise the gas tax”`,
+                host: `Boston Globe OpEd`,
+                body: `OpEd making the powerful environmental and climate case for raising the gas tax to fund transportation infrastructure while encouraging the gradual transition to more efficient vehicles and lower carbon transportation.`,
                 link: `http://archive.boston.com/bostonglobe/editorial_opinion/oped/articles/2009/05/25/the_main_reason_to_raise_the_gas_tax/`
                 },
             ]

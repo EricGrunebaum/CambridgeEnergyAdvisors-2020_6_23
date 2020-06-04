@@ -10,6 +10,7 @@
       :date="upcomingEvent.date"
       :role="upcomingEvent.role"
       :title="upcomingEvent.title"
+      :host="upcomingEvent.host"
       :body="upcomingEvent.body"
       :link="upcomingEvent.link"></event-template>
       </v-div>
@@ -20,6 +21,7 @@
       :date="priorEvent.date"
       :role="priorEvent.role"
       :title="priorEvent.title"
+      :host="priorEvent.host"
       :body="priorEvent.body"
       :link="priorEvent.link"></event-template>
       </v-div>

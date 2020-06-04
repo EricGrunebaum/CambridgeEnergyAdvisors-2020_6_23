@@ -6,9 +6,11 @@
     <article v-for="paragraph in project.paragraphs" :key="paragraph" class="text-left blockquote">{{ paragraph }}<br><br></article>
    
    <div class="hidden-xs-only">
-        <v-img v-if="this.projectId === 2" :src="project.photo2" sizes="(max-width: 600px) 480px" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"></v-img>
-        <v-img v-else-if="this.projectId === 3" :src="project.photo2" sizes="(max-width: 600px) 480px" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"></v-img>
-        <v-img v-else :src="project.photo" sizes="(max-width: 600px) 480px" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"></v-img>
+       <div class="d-flex justify-center">
+        <v-img v-if="this.projectId === 2" :src="project.photo2" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"></v-img>
+        <v-img v-else-if="this.projectId === 3" :src="project.photo2" max-width="600" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true" class=""></v-img>
+        <v-img v-else :src="project.photo" max-width="600" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"></v-img>
+       </div>
         <v-btn v-if="this.projectId > 1" color="primary" outlined :to="{ name: 'SingleProject', params: {id:projectId-1} }" class="ma-6"><v-icon>mdi-chevron-left</v-icon>Previous Project</v-btn>
         <v-btn color="primary"  :to="{ name: 'projects' }" class="ma-6">Back to Projects </v-btn>
         <v-btn v-if="this.projectId < 5" color="primary" outlined :to="{ name: 'SingleProject', params: {id:projectId+1} }" class="ma-6">Next Project <v-icon>mdi-chevron-right</v-icon></v-btn>
