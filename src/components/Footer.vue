@@ -12,6 +12,7 @@
                 </p>
                 <a href="tel:617-304-5824"><v-icon>mdi-phone</v-icon></a>
                 <a href="mailto:eric@cambridgeenergyadvisors.com"><v-icon>mdi-email</v-icon></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ericgrunebaum/"><v-icon>mdi-linkedin</v-icon></a>
             </v-col>
             <v-col class="text-left">
                  <p class="grey-text text-lighten-4">
@@ -25,9 +26,9 @@
                     Securities offered through:<br> 
                     Bequia Securities, LLC Member FINRA/SIPC<br>
                     22 Mill St, Suite 303, Arlington, MA 02476 <br>
+                    
                     <a href="tel:617-209-2104"><v-icon>mdi-phone</v-icon></a>
                     <a href="mailto:eric.grunebaum@bequiasecurities.com"><v-icon>mdi-email</v-icon></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/ericgrunebaum/"><v-icon>mdi-linkedin</v-icon></a>
                 </p>
                 <a style="color: black;" target="_blank" href="https://brokercheck.finra.org/individual/summary/6593435">Broker Check</a>
             </v-col>
@@ -48,5 +49,7 @@ export default {
 }
 </script>
 <style scoped>
-    
+    * {
+        font-size: 1.15rem
+    }
 </style>

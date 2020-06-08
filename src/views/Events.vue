@@ -2,9 +2,10 @@
 <div class="events">
     <h1 class="display-3 hidden-xs-only ma-6">Events</h1>
       <h3 class="display-2 hidden-sm-and-up ma-6">Events</h3>
+      <v-divider class="primary"></v-divider>
       
     <h2 class=" hidden-xs-only ma-6 text-left primary--text">Upcoming Events</h2>
-      <h4 class="hidden-sm-and-up ma-6 text-underline primary--text">Upcoming Events</h4>
+      <h4 class="hidden-sm-and-up ma-6 text-underline primary--text mobile-heading">Upcoming Events</h4>
       <v-div v-for="upcomingEvent in events.upcomingEvents" :key="upcomingEvent">
       <event-template
       :date="upcomingEvent.date"
@@ -15,7 +16,7 @@
       :link="upcomingEvent.link"></event-template>
       </v-div>
     <h2 class=" hidden-xs-only ma-6 text-left primary--text">Prior Events</h2>
-      <h4 class="hidden-sm-and-up ma-6 primary--text">Prior Events</h4>
+      <h4 class="hidden-sm-and-up ma-6 primary--text mobile-heading">Prior Events</h4>
       <v-div v-for="priorEvent in events.priorEvents" :key="priorEvent">
       <event-template
       :date="priorEvent.date"
@@ -47,6 +48,9 @@ export default {
 }
 </script>
 <style scoped>
+.mobile-heading {
+  font-size: 1.5rem;
+}
 .events {
         animation: fadeInAnimation ease 1s;
         

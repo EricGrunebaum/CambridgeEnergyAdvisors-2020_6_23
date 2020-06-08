@@ -2,7 +2,7 @@
   <div class="projects">
     <h1 class="display-3 hidden-xs-only ma-6">Projects</h1>
       <h3 class="display-2 hidden-sm-and-up">Projects</h3>
-      <v-divider></v-divider>
+      <v-divider class="primary"></v-divider>
       
        
   <v-container>
@@ -11,7 +11,6 @@
         
       
       <v-col cols="12" sm="6" md="6" lg="4" v-for="project in projects" :key="project">
-        
 
 
           <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"
@@ -26,21 +25,22 @@
               <v-chip
               label
               :color="project.color"
-              class="text-center"
+              class="text-center "
               
               >
               {{ project.category }}</v-chip>
               </div>
+        
           
                 
-                <v-card-title class="hidden-xs-only text-break" style="max-width: 400px; word-break: normal;" :id="project.name">{{ project.title }}</v-card-title>
-                <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up" :id="project.name">{{ project.title }}</v-card-title>
+                <v-card-title class="hidden-xs-only text-break project-title justify-center" :id="project.name">{{ project.title }}</v-card-title>
+                <v-card-title style="max-width: 400px; word-break: normal;" class="hidden-sm-and-up project-title" :id="project.name">{{ project.title }}</v-card-title>
+        
               </v-parallax>
             </router-link>
         
           </v-card>
           
-
         
       </v-col> 
       
@@ -77,10 +77,17 @@ export default {
     position: absolute;
     transform: translateY(-220px);
   }
+  
   .projects {
         animation: fadeInAnimation ease 1s;
         
     }
+  .project-title{
+    font-weight: 900;
+    background-color: black;
+    opacity: .7;
+    border-radius: 5px;
+  }
     @keyframes fadeInAnimation{
         0% {
             opacity: 0;
@@ -91,5 +98,6 @@ export default {
             transform: translateY(0);
         }
     }
+    
 
 </style>

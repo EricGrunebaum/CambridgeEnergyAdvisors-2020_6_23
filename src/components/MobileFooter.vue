@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center">
+    <div class="text-center content-body">
         <div class="d-flex flex-column"
         @click="sheet = !sheet">
             <span class="mt-4 mb-2"> 
@@ -21,12 +21,14 @@
           color="red"
           @click="sheet = !sheet"
         >mdi-chevron-down</v-icon>
-        <v-container class="px-8 d-flex flex-column text-center">
+        <v-container class="px-8 d-flex flex-column text-center content-body">
             <v-row class="text-left">
                 <span class="text-white">Cambridge Energy Advisors</span>
                  <p class="grey-text text-lighten-4">
-                    Principal: Eric Grunebaum <a href="mailto:eric@cambridgeenergyadvisors.com"><v-icon>mdi-email</v-icon></a><br>
-                    M: 617-304-5824 <a href="tel:617-304-5824"><v-icon>mdi-phone</v-icon></a><br>                                        
+                    Principal: Eric Grunebaum <br>
+                    <a href="https://www.linkedin.com/in/ericgrunebaum/"><v-icon>mdi-linkedin</v-icon></a>
+                    <a href="mailto:eric@cambridgeenergyadvisors.com"><v-icon>mdi-email</v-icon></a>
+                    <a href="tel:617-304-5824"><v-icon>mdi-phone</v-icon></a><br>                                        
                 </p>
             </v-row>
             <v-divider></v-divider>
@@ -43,7 +45,9 @@
                     Securities offered through:<br> 
                     Bequia Securities, LLC Member FINRA/SIPC<br>
                     22 Mill St, Suite 303, Arlington, MA 02476 <br>
-                    Tel: 617-209-2104                                       
+                    <a href="tel:617-209-2104"><v-icon>mdi-phone</v-icon></a>
+                    <br>
+                    <a id="broker" target="_blank" href="https://brokercheck.finra.org/individual/summary/6593435">Broker Check</a>
                 </p>
             </v-row>
     </v-container>
@@ -60,7 +64,14 @@ export default {
 }
 </script>
 <style scoped>
+    .content-body {
+        font-size: 1.3rem;
+    }
     a{
         text-decoration: none;
+    }
+    #broker{
+        text-decoration: underline;
+        color: #000000de;
     }
 </style>

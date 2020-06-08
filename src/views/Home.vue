@@ -7,12 +7,16 @@
     </v-div>
     <v-divider class="my-4 primary"></v-divider>
       <div v-for="(homeContent, index) in homeContents" :key="homeContent">
+      
       <hero-image
       data-aos="fade-in" data-aos-duration="1000"
       :title="homeContent.head"
       :body="homeContent.body"
       :photo="homeContent.source"
-      :route="homeContent.route"></hero-image>
+      :route="homeContent.route"
+      ></hero-image>
+      
+      
       
         <v-row class="d-flex">
       
@@ -45,7 +49,10 @@ export default {
   },
   data(){
     return {
-    }
+      
+    
+      }
+    
   },
   computed: {
     homeContents(){
@@ -58,6 +65,13 @@ export default {
 }
 </script>
 <style scoped>
+.backdrop{
+        background-color: #0000008a;
+        border-radius: 3%;
+        padding: 3rem;
+    }
+
+
   .display-4{
     font-family: Montserrat, cursive;
     color: rgba(0, 0, 0, .8)

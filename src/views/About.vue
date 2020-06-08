@@ -4,18 +4,20 @@
     
       <h1 class="display-3 hidden-xs-only ma-6">About Us</h1>
       <h3 class="display-2 hidden-sm-and-up">About Us</h3>
+      <v-divider class="primary"></v-divider>
     
     <div v-for="content in about.lead1" :key="content" class="text-left ma-4">
-        <p class="blockquote">{{ content }}</p>
+        <p class=" content-body">{{ content }}</p>
+    </div>
+    <div  class="text-left ma-4">
+        <p v-for="content in about.lead2.a" :key="content" class=" content-body lead hidden-xs-only"> • {{ content }}</p>
     </div>
     <div v-for="content in about.lead2.a" :key="content" class="text-left ma-4">
-        <p class="blockquote lead hidden-xs-only">{{ content }}</p>
+        <p class=" content-body hidden-sm-and-up"> • {{ content }}</p>
     </div>
-    <div v-for="content in about.lead2.a" :key="content" class="text-left ma-4">
-        <p class="blockquote hidden-sm-and-up">{{ content }}</p>
-    </div>
+    <br>
     <div v-for="content in about.contents" :key="content" class="text-left ma-4">
-        <blockquote class="blockquote">{{ content }}</blockquote>
+        <blockquote class=" content-body">{{ content }}</blockquote>
     </div>
     </v-container>
     <v-col justify-content="space-around" class="hidden-xs-only" >
@@ -46,6 +48,7 @@ export default {
 }
 </script>
 <style scoped>
+    
     .about {
         animation: fadeInAnimation ease 1s;
         
@@ -61,6 +64,13 @@ export default {
         }
     }
     .lead {
-      text-indent: 2rem;
+      padding: 0 2rem;
+      margin-bottom: 5px;
     }
+    .content-body{
+      font-size: 1.3rem;
+      font-weight: 300;
+
+    }
+
 </style>

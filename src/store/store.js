@@ -10,23 +10,26 @@ export const store = new Vuex.Store({
 
 
         homeContents: [
-            {              
-                head: `fundraising & impact investment.`,
-                body: `Our approach to investment focuses on providing genuine value to funds, companies and investors. Impact investment does not mean reducing financial returns to generate positive environmental and social benefits – in fact many studies indicate the reverse is true. Holding the FINRA Series 82 + 63 licenses and working with team of partners to source and vet deals, we connect investors to private market opportunities while sourcing capital for companies and funds focusing on resource efficiency and social benefit.`,
-                source: require(`../../public/trees-blue-sky.jpg`),
-                route: `/about`
+            {   
+                    id: 1,           
+                    head: `fundraising & impact investment.`,
+                    body: `Our approach to investment focuses on providing genuine value to funds, companies and investors. Impact investment does not mean reducing financial returns to generate positive environmental and social benefits – in fact many studies indicate the reverse is true. Holding the FINRA Series 82 + 63 licenses and working with team of partners to source and vet deals, we connect investors to private market opportunities while sourcing capital for companies and funds focusing on resource efficiency and social benefit.`,
+                    source: require(`../../public/trees-blue-sky.jpg`),
+                    route: `/about`,
                 },
                 {
-                head: `project development – solar,  commercial energy efficiency & environmental justice.`,
-                body: `Our project development work focuses on developing projects and bringing catalytic funding to commercial scale solar and energy efficiency retrofits. On a pro bono basis, we’ve also advanced a brownfield restoration project in an environmental justice community. Working with commercial and non-profit owners, we bring technical expertise, sources of funding when needed, visioning and stakeholder engagement to advance projects that increase sustainability and financial returns.`,
-                source: require(`../../public/energy_circle.jpg`),
-                route: `/about`
+                    id: 2,
+                    head: `project development – solar,  commercial energy efficiency & environmental justice.`,
+                    body: `Our project development work focuses on developing projects and bringing catalytic funding to commercial scale solar and energy efficiency retrofits. On a pro bono basis, we’ve also advanced a brownfield restoration project in an environmental justice community. Working with commercial and non-profit owners, we bring technical expertise, sources of funding when needed, visioning and stakeholder engagement to advance projects that increase sustainability and financial returns.`,
+                    source: require(`../../public/energy_circle.jpg`),
+                    route: `/about`
                 },
                 {
-                head: `business development ~ clean energy & resource efficiency`,
-                body: `Our approach to business development is grounded in a 20 year foundation of creating science communications via documentary films and for science and natural history museums. Communicating your company, fund or project’s purpose and narrative powerfully and with an economy of words is critical to engaging people, whether they be prospective investors, partners or customers.`,
-                source: require(`../../public/office_window.jpg`),
-                route: `/about`
+                    id: 3,
+                    head: `business development ~ clean energy & resource efficiency`,
+                    body: `Our approach to business development is grounded in a 20 year foundation of creating science communications via documentary films and for science and natural history museums. Communicating your company, fund or project’s purpose and narrative powerfully and with an economy of words is critical to engaging people, whether they be prospective investors, partners or customers.`,
+                    source: require(`../../public/office_window.jpg`),
+                    route: `/about`
             },
             
         ],
@@ -60,7 +63,8 @@ export const store = new Vuex.Store({
                  color: 'primary',              
                  category: 'fundraising & impact investment.',
                  title: `Solar Tax Equity and Bond Fund`,
-                 photo: require('../../public/solar_array.jpg'),
+                 photo: require('../../public/commercial-bldg-solar.jpg'),
+                 photo2: require('../../public/solar-workers.jpg'),
                    paragraphs: [
                          `For this startup commercial solar fund, we helped expand the investor base, bringing in our network of high net-worth, family office and foundation investors, raising a total of $2.25 million. The funds we raised helped build approximately 1 megawatt of rooftop solar for a broad spectrum of non-profits, schools, houses of worship, REITs and other businesses, while generating great returns and tax benefits for investors`,
                          `The thesis for this evergreen solar development fund is an intentional focus on commercial-scale rooftops of all shapes and sizes where solar progress has been slowed by transaction costs, complexity and the uniqueness of each building’s roof and underwriting. While residential and utility scale solar have exploded with access to institutional investment, commercial scale rooftops have generally lagged due to these challenges and the broad range of building types and uses.`,
@@ -75,8 +79,8 @@ export const store = new Vuex.Store({
                 color: 'primary',              
                 category: 'fundraising & impact investment.',
                 title: `Series C Raise for Clean Energy Hardware Company`,
-                photo: require('../../public/jerrys-pond1948.jpg'),
-                photo2: require('../../public/energy-us-2019.jpg'),
+                photo: require('../../public/engine-1.jpg'),
+                photo2: require('../../public/series-c-engine.jpg'),
                 paragraphs: [
                         `For a mature clean energy hardware startup based in Colorado, we helped build relationships with investors on the East Coast, gaining attention and access to capital markets, primarily focusing on venture capital firms and corporate strategic investors including major multinational companies. This effort has been critical for raising the company’s profile and generating new investor relationships.`,
                         `After 10+ years of engineering development and with three Small Business Innovation Research grants from EPA, DOE and NSF totaling $2.7M under their belt, this company is ready to commercialize their fifth-generation, modular, waste-heat-to-power advanced Stirling engine design. Full scale 25kW pilot engines have been tested by the Army Corps of Engineers: Cold Regions Research & Engineering Lab verifying efficiencies up to 30% for an engine generating zero-emissions electricity from excess heat, in effect, a free, wasted fuel source. Also tested by a global electrical equipment manufacturer and generating R&D investment from a multinational cement manufacturing company, the technology is ready for commercial piloting, strategic partnerships and/or IP licensing.`,
@@ -88,7 +92,7 @@ export const store = new Vuex.Store({
                 color: 'orange',              
                 category: `project development.`,
                 title: `Commercial Solar in Harvard Square, Cambridge `, 
-                photo: require('../../public/solar_workers.jpg'),
+                photo: require('../../public/solar-array.jpg'),
                 photo2: require('../../public/solar-array-schematic.jpg'),
                 paragraphs: [
                         `This commercial solar project on a significant block in Harvard Square has three unique phases – first are traditional flat roof solar arrays; second will be a solar array on a rooftop structure visible from the surrounding business district; and finally, translucent solar panels will be mounted above a dramatic atrium space, generating clean power while also providing shading to reduce heat gain making the space more functional year-round.`,
@@ -102,7 +106,8 @@ export const store = new Vuex.Store({
               color: 'orange',         
               category: `project development.`,
               title: `Brownfield to Accessible Natural Reservation`, 
-              photo: require('../../public/swimming.jpg'),
+              photo: require('../../public/jerrys-pond1948-2.jpg'),
+              photo2: require('../../public/mayor.jpg'),
               paragraphs: [
                       `Once an open-pit mine where rich clay deposits were extracted until the late 1800s, when depleted, “Jerry’s Pit” filled with water and became a popular swimming hole for the neighboring working-class community for almost 100 years. However in 1961 it was fenced-off and public access has been denied for 60 years while large portions of the adjacent land were polluted by the infamous W.R. Grace chemical company.`,
                       `Today, there are nearly 4,000 affordable housing residents living across the street so restoring the site for safe public access while enhancing the natural ecosystem provides a generational opportunity for a new reservation and pond within a significant environmental justice community. While fences have protected the community from asbestos left in the soil by W.R Grace, they have left a permanent blight in a neighborhood now settled by an extremely diverse population, many of whom do not have easy access to natural areas further afield.`,
@@ -116,7 +121,7 @@ export const store = new Vuex.Store({
                 color: 'blue',                
                 category: 'business development.',
                 title: `European Pharma Catalyst/Green Chemistry Firm`, 
-                photo: require('../../public/atoms.jpg'),
+                photo: require('../../public/molecules.jpg'),
                 paragraphs: [
                         `For this EU-based company, entering the US market through the globally important Kendall Square, Cambridge, MA pharma and life-sciences cluster was the key to gaining market share for its world-leading catalysts which reduce the need for toxic solvents and energy inputs required to manufacture pharmaceuticals.`,
                         `Entering foreign markets skillfully requires clear communications, access to primary beachhead markets, sales channels and a presence in the region. The raw materials of a great technology, the science undergirding it and the results to back it up are key, but not sufficient. Transforming dense, scientific information into a compelling narrative that grabs attention and then getting it in front of the right eyes – potential customers and partners – is critical.`,
@@ -131,7 +136,8 @@ export const store = new Vuex.Store({
                 color: 'blue',                
                 category: 'business development.',
                 title: `Clean Energy Incubator Expansion`, 
-                photo: require('../../public/desk-plants.jpg'),
+                photo: require('../../public/podium-speaker-3.jpg'),
+                photo2: require('../../public/crowd.jpg'),
                 paragraphs: [
                         `North America’s largest business incubator 100% focused on piloting and commercializing hardware solutions addressing resource efficiency challenges (aka cleantech) began when four MIT grads found a garage to share. What started as a simple space-sharing enterprise organically grew over five years to a thriving community of over 30 startup companies sharing an industrial facility split between lab space and shared desk areas.`,
                         `Expanding into the incubator’s third facility, a 30,000 square foot factory floor, increasing interaction and curated collaboration, support, guidance and mentoring from strategic multinational partners, as well as state economic development agencies, clean energy thought-leaders and investors helped create a vibrant and successful community of startups in a challenging sector, one which requires long-timelines for iterative hardware piloting and market development.`,
@@ -155,9 +161,9 @@ export const store = new Vuex.Store({
             lead2: {
                 a: 
                     {   
-                        1:`• developing clean energy, environmental and resource efficiency projects`,
-                        2:`• raising investment capital for aligned companies and funds and helping investors source these impact investment opportunities;`,
-                        3: `• and providing critical business development strategy for companies and funds working in this space.` 
+                        1:`developing clean energy, environmental and resource efficiency projects`,
+                        2:`raising investment capital for aligned companies and funds and helping investors source these impact investment opportunities;`,
+                        3: `and providing critical business development strategy for companies and funds working in this space.` 
                     },
                 },
             contents: {
