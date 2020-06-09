@@ -15,7 +15,7 @@
     <div v-for="content in about.lead2.a" :key="content" class="text-left ma-4">
         <p class=" content-body hidden-sm-and-up"> • {{ content }}</p>
     </div>
-    <br>
+    
     <div v-for="content in about.contents" :key="content" class="text-left ma-4">
         <blockquote class=" content-body">{{ content }}</blockquote>
     </div>
