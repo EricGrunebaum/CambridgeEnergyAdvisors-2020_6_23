@@ -4,7 +4,7 @@
       class="font-weight-light primary justify-center"
     >
     <!-- Social media? -->
-    <v-container class="d-none d-sm-flex text-center">
+    <v-container class="d-none d-sm-flex text-center main-text">
             <v-col class="text-left">
                 <span class="text-white">Cambridge Energy Advisors</span>
                  <p class="grey-text text-lighten-4">
@@ -34,8 +34,10 @@
             </v-col>
     </v-container>
     <mobile-footer  class="hidden-sm-and-up"></mobile-footer>
-    <v-container class="d-flex text-center">
-        <v-col>{{ new Date().getFullYear() }} — <strong>Cambridge Energy Advisors</strong></v-col>
+    <v-container class="d-flex text-center flex-column">
+        <v-col> &copy; {{ new Date().getFullYear() }} — <strong>Cambridge Energy Advisors</strong></v-col>
+        <p class="fine-print-m grey-text text-lighten-4 hidden-sm-and-up"><em>Cambridge Energy Advisors is not an investment advisor and does not provide investment advice. All securities-related activities are conducted by Eric Grunebaum, a registered representative of Bequia Securities LLC, Member FINRA/SIPC.</em></p>
+        <p class="fine-print grey-text text-lighten-4 hidden-xs-only"><em>Cambridge Energy Advisors is not an investment advisor and does not provide investment advice. All securities-related activities are conducted by Eric Grunebaum, a registered representative of Bequia Securities LLC, Member FINRA/SIPC.</em></p>
     </v-container>
     
     </v-footer>
@@ -49,7 +51,14 @@ export default {
 }
 </script>
 <style scoped>
-    * {
+    .main-text {
         font-size: 1.15rem
+    }
+
+    .fine-print-m {
+        font-size: .75rem;
+    }
+    .fine-print {
+        font-size: .95rem;
     }
 </style>
