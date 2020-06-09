@@ -47,10 +47,10 @@ export default {
         
     }
     #content-body{
-        font-size: x-large;
+        font-size: 1.5rem;
     }
     #content-body-mobile{
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
     .subheading{
         font-size: 20px;
