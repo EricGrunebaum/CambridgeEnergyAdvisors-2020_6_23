@@ -106,7 +106,7 @@ export const store = new Vuex.Store({
               color: 'orange',         
               category: `project development.`,
               title: `Brownfield to Accessible Natural Reservation`, 
-              photo: require('../../public/jerrys-pond1948-2.jpg'),
+              photo: require('../../public/jerrys-1948-11.jpg'),
               photo2: require('../../public/mayor.jpg'),
               paragraphs: [
                       `Once an open-pit mine where rich clay deposits were extracted until the late 1800s, when depleted, “Jerry’s Pit” filled with water and became a popular swimming hole for the neighboring working-class community for almost 100 years. However in 1961 it was fenced-off and public access has been denied for 60 years while large portions of the adjacent land were polluted by the infamous W.R. Grace chemical company.`,
@@ -136,7 +136,7 @@ export const store = new Vuex.Store({
                 color: 'blue',                
                 category: 'business development.',
                 title: `Clean Energy Incubator Expansion`, 
-                photo: require('../../public/podium-speaker-3.jpg'),
+                photo: require('../../public/podium9.jpg'),
                 photo2: require('../../public/crowd.jpg'),
                 paragraphs: [
                         `North America’s largest business incubator 100% focused on piloting and commercializing hardware solutions addressing resource efficiency challenges (aka cleantech) began when four MIT grads found a garage to share. What started as a simple space-sharing enterprise organically grew over five years to a thriving community of over 30 startup companies sharing an industrial facility split between lab space and shared desk areas.`,
@@ -183,7 +183,7 @@ export const store = new Vuex.Store({
                 title: `A Burning Question: Are Oil & Gas Companies Really Evolving?`,
                 host: `Boston Area Sustainability Group`,
                 body: `The spotlight is on oil & gas companies and their progress, or lack-thereof, in transforming their businesses towards decarbonization. Our lead speaker will be Dr. Peter Frumhoff, Director of Science & Policy and Chief Climate Scientist at the Union of Concerned Scientists and coauthor of the annual UCS “Climate Accountability Scorecard”, subtitled “Insufficient Progress from Major Fossil Fuel Companies.”`,
-                link: `https://basgdotorg.wordpress.com/calendar/flipping-the-switch-are-energy-and-utility-companies-evolving/`
+                link: `https://basgdotorg.wordpress.com/calendar/a-burning-question/`
                 }
             ],
             priorEvents: [
