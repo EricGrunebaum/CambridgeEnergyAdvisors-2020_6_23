@@ -4,8 +4,8 @@
             <v-toolbar flat app prominent> 
                 <v-app-bar-nav-icon class="hidden-md-and-up primary--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-toolbar-title class="text-uppercase hidden-xs-only text-start">
-                    <!-- <div><a href="/"><v-img class="" :src="logo" max-height="120"></v-img></a></div> -->
-                    <div><a href="/"><span class="primary--text display-1 text-lowercase">cambridge energy advisors.</span></a></div>
+                    <div><a href="/"><v-img class="" :src="logo" max-height="120"></v-img></a></div>
+                    <!-- <div><a href="/"><span class="primary--text display-1 text-lowercase">cambridge energy advisors.</span></a></div> -->
                 </v-toolbar-title>
                 
                 <v-spacer></v-spacer>
@@ -64,7 +64,7 @@ export default {
                 {text: 'projects.', route: '/projects'},
                 {text: 'events.', route: '/events'},
             ],
-            // logo: require('../../public/ce8.svg')
+            logo: require('../../public/cea2.png')
         }
     }   
 }
