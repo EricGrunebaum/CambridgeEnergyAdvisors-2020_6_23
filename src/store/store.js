@@ -122,6 +122,7 @@ export const store = new Vuex.Store({
                 category: 'business development.',
                 title: `European Pharma Catalyst/Green Chemistry Firm`, 
                 photo: require('../../public/molecules.jpg'),
+                photo2: require('../../public/apeiron.jpg'),
                 paragraphs: [
                         `For this EU-based company, entering the US market through the globally important Kendall Square, Cambridge, MA pharma and life-sciences cluster was the key to gaining market share for its world-leading catalysts which reduce the need for toxic solvents and energy inputs required to manufacture pharmaceuticals.`,
                         `Entering foreign markets skillfully requires clear communications, access to primary beachhead markets, sales channels and a presence in the region. The raw materials of a great technology, the science undergirding it and the results to back it up are key, but not sufficient. Transforming dense, scientific information into a compelling narrative that grabs attention and then getting it in front of the right eyes – potential customers and partners – is critical.`,
