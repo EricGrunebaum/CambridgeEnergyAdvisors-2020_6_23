@@ -10,7 +10,7 @@
       
         
       
-      <v-col cols="12" sm="6" md="6" lg="4" v-for="project in projects" :key="project">
+      <v-col cols="12" sm="6" md="6" lg="4" v-for="(project, index) in projects" :key="index">
 
 
           <v-card class="mx-auto elevation-{ hover ? 20 : 5 }"

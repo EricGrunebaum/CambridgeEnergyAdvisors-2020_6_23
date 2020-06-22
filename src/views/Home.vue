@@ -2,7 +2,7 @@
   
   <div class="home">
     <v-divider class="my-4 primary"></v-divider>
-      <div v-for="(homeContent, index) in homeContents" :key="homeContent">
+      <div v-for="(homeContent, index) in homeContents" :key="index">
       
       <hero-image
       data-aos="fade-in" data-aos-duration="1000"

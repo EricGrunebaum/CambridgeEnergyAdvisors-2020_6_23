@@ -6,7 +6,7 @@
       
     <h2 class=" hidden-xs-only ma-6 text-left secondary--text">Upcoming Events</h2>
       <h4 class="hidden-sm-and-up ma-6 text-underline secondary--text mobile-heading">Upcoming Events</h4>
-      <v-div v-for="upcomingEvent in events.upcomingEvents" :key="upcomingEvent">
+      <div v-for="(upcomingEvent, index) in events.upcomingEvents" :key="index">
       <event-template
       :color="upcomingEvent.color"
       :date="upcomingEvent.date"
@@ -15,10 +15,10 @@
       :host="upcomingEvent.host"
       :body="upcomingEvent.body"
       :link="upcomingEvent.link"></event-template>
-      </v-div>
+      </div>
     <h2 class=" hidden-xs-only ma-6 text-left primary--text">Prior Events</h2>
       <h4 class="hidden-sm-and-up ma-6 primary--text mobile-heading">Prior Events</h4>
-      <div v-for="priorEvent in events.priorEvents" :key="priorEvent">
+      <div v-for="(priorEvent, index) in events.priorEvents" :key="index">
       <event-template
       :color="priorEvent.color"
       :date="priorEvent.date"
