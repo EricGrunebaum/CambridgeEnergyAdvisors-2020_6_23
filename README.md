@@ -1,4 +1,4 @@
-# cambridge-energy-consultants
+# cambridge-energy-advisors
 
 ## Project setup
 ```

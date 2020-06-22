@@ -16,8 +16,8 @@
     <h1 class="display-2 hidden-sm-and-up">{{ head }}</h1>
     <v-col class="" cols="12">
     <div class="backdrop">
-        <h1 class="text-center display-2 mb-4 hidden-xs-only">{{ title }}</h1>
-        <h1 class="text-center display-1 mb-4 hidden-sm-and-up">{{ title }}</h1>
+        <h1 class="text-center display-2 mb-6 hidden-xs-only">{{ title }}</h1>
+        <h1 class="text-center display-1 mb-6 hidden-sm-and-up">{{ title }}</h1>
         <h4 id="content-body" class="text-center subheading text--light hidden-xs-only">{{ body }}</h4>
         <h4 id="content-body-mobile" class="text-center subheading text--light hidden-sm-and-up">{{ body }}</h4>
 
@@ -55,6 +55,7 @@ export default {
     .subheading{
         font-size: 20px;
         font-weight: 400;
+        padding: 0 2rem;
     }
     .display-4,
     .display-2{
@@ -69,5 +70,6 @@ export default {
         word-break: normal;
         font-size: x-large;
     }
+    
     
 </style>

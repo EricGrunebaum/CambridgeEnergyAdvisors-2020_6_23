@@ -1,7 +1,7 @@
 <template>
   <div class="projects">
-    <h1 class="display-3 hidden-xs-only ma-6">Projects</h1>
-      <h3 class="display-2 hidden-sm-and-up">Projects</h3>
+    <h1 class="display-3 hidden-xs-only ma-6">Case Studies</h1>
+      <h3 class="display-2 hidden-sm-and-up">Case Studies</h3>
       <v-divider class="primary"></v-divider>
       
        
@@ -25,7 +25,8 @@
               <v-chip
               label
               :color="project.color"
-              class="text-center "
+              class="text-center"
+              text-color="black"
               
               >
               {{ project.category }}</v-chip>
@@ -76,7 +77,9 @@ export default {
   .chip{
     position: absolute;
     transform: translateY(-220px);
+    
   }
+  
   
   .projects {
         animation: fadeInAnimation ease 1s;
@@ -84,7 +87,8 @@ export default {
     }
   .project-title{
     font-weight: 900;
-    background-color: black;
+    background-color: white;
+    color: black;
     opacity: .7;
     border-radius: 5px;
   }

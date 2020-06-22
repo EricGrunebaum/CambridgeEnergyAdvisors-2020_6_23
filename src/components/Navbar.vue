@@ -4,8 +4,12 @@
             <v-toolbar flat app prominent> 
                 <v-app-bar-nav-icon class="hidden-md-and-up primary--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-toolbar-title class="text-uppercase hidden-xs-only text-start">
-                    <!-- <div><a href="/"><v-img class="" :src="logo" max-height="120"></v-img></a></div> -->
-                    <a href="/"><div class="logo"><span class="primary--text text-lowercase">cambridge energy advisors.</span></div></a>
+                    <div><a href="/"><v-img class="" :src="logo" max-height="120"></v-img></a></div>
+                    <!-- <a href="/"><div class="logo"><span class="primary--text text-lowercase">cambridge energy advisors.</span></div></a> -->
+                </v-toolbar-title>
+                <v-toolbar-title class="text-uppercase hidden-sm-and-up text-start">
+                    <div><a href="/"><v-img class="" :src="logoMobile" max-height="120"></v-img></a></div>
+                    <!-- <a href="/"><div class="logo"><span class="primary--text text-lowercase">cambridge energy advisors.</span></div></a> -->
                 </v-toolbar-title>
                 
                 <v-spacer></v-spacer>
@@ -61,9 +65,12 @@ export default {
             links: [
                 {text: 'home.', route: '/'},
                 {text: 'about us.', route: '/about'},
-                {text: 'projects.', route: '/projects'},
+                {text: 'case studies.', route: '/projects'},
                 {text: 'events.', route: '/events'},
             ],
+            logo: require('../../public/cea-logo.png'),
+            logoMobile: require('../../public/cea-logo-mobile.png'),
+            
             
         }
     }   

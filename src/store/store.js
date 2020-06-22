@@ -19,14 +19,14 @@ export const store = new Vuex.Store({
                 },
                 {
                     id: 2,
-                    head: `project development – solar,  commercial energy efficiency & environmental justice.`,
+                    head: `project development ~ solar,  commercial energy efficiency & environmental justice.`,
                     body: `Our project development work focuses on developing projects and bringing catalytic funding to commercial scale solar and energy efficiency retrofits. On a pro bono basis, we’ve also advanced a brownfield restoration project in an environmental justice community. Working with commercial and non-profit owners, we bring technical expertise, sources of funding when needed, visioning and stakeholder engagement to advance projects that increase sustainability and financial returns.`,
                     source: require(`../../public/energy_circle.jpg`),
                     route: `/about`
                 },
                 {
                     id: 3,
-                    head: `business development ~ clean energy & resource efficiency`,
+                    head: `business development ~ clean energy & resource efficiency.`,
                     body: `Our approach to business development is grounded in a 20 year foundation of creating science communications via documentary films and for science and natural history museums. Communicating your company, fund or project’s purpose and narrative powerfully and with an economy of words is critical to engaging people, whether they be prospective investors, partners or customers.`,
                     source: require(`../../public/office_window.jpg`),
                     route: `/about`
@@ -36,18 +36,18 @@ export const store = new Vuex.Store({
 
         cases: [
         {
-          title: `project: solar tax equity and bond fund`,
+          title: `case study: commercial scale solar tax equity & bond fund.`,
           body: `For this startup commercial solar fund, we helped expand the investor base, bringing in our network of high net-worth, family office and foundation investors, raising a total of $2.25 million. The funds we raised helped build approximately 1 megawatt of rooftop solar for a broad spectrum of non-profits, schools, houses of worship, REITs and other businesses, while generating great returns and tax benefits for investors.`,
           route: `/projects`,
         },
         {
-          title: `project: commercial solar in harvard square, cambridge`,
+          title: `case study: commercial solar in harvard square, cambridge, ma`,
           body: `This commercial solar project on a significant block in Harvard Square has three unique phases – first are traditional flat roof solar arrays; second will be a solar array on a rooftop structure visible from the surrounding business district; and finally, translucent solar panels will be mounted above a dramatic atrium space, generating clean power while also providing shading to reduce heat gain making the space more functional year-round.`,
           route: `/projects`,
       
         },
         {
-          title: `project: european pharma catalyst/green chemistry firm`,
+          title: `case study: european pharma catalyst/green chemistry firm`,
           body: `For this EU-based company, entering the US market through the globally important Kendall Square, Cambridge, MA pharma and life-sciences cluster was the key to gaining market share for its world-leading catalysts which reduce the need for toxic solvents and energy inputs required to manufacture pharmaceuticals.`,
           route: `/projects`,
       
@@ -62,7 +62,7 @@ export const store = new Vuex.Store({
                  id: 1,
                  color: 'primary',              
                  category: 'fundraising & impact investment.',
-                 title: `Solar Tax Equity and Bond Fund`,
+                 title: `Commercial Scale Solar Tax Equity & Bond Fund`,
                  photo: require('../../public/commercial-bldg-solar.jpg'),
                  photo2: require('../../public/solar-workers.jpg'),
                    paragraphs: [
@@ -91,7 +91,7 @@ export const store = new Vuex.Store({
                 id: 3,
                 color: 'orange',              
                 category: `project development.`,
-                title: `Commercial Solar in Harvard Square, Cambridge `, 
+                title: `Commercial Solar in Harvard Square, Cambridge, MA `, 
                 photo: require('../../public/solar-array.jpg'),
                 photo2: require('../../public/solar-array-schematic.jpg'),
                 paragraphs: [
@@ -179,6 +179,7 @@ export const store = new Vuex.Store({
         events:{
             upcomingEvents: [
                 {
+                color: `secondary`,
                 date: 'Oct 6, 2020',
                 role: `Curator & Moderator`,
                 title: `A Burning Question: Are Oil & Gas Companies Really Evolving?`,
@@ -189,6 +190,7 @@ export const store = new Vuex.Store({
             ],
             priorEvents: [
                 {
+                color: 'primary',
                 date: `2020`,
                 role: `Author`,
                 title: `Why I Give`,
@@ -197,6 +199,7 @@ export const store = new Vuex.Store({
                 link: `https://www.clf.org/how-you-can-help/why-we-give/eric-grunebaum/`
                 },
                 {
+                color: 'primary',
                 date: `2019`,
                 role: `Speaker`,
                 title: `Clean Energy Climate Solutions Panel`,
@@ -205,6 +208,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/owning-it-sustainability-and-worker-cooperatives/`
                 },
                 {
+                color: 'primary',
                 date: `2019`,
                 role: `Curator & Moderator`,
                 title: `Owning It! Sustainability and Worker Cooperatives`,
@@ -213,6 +217,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/owning-it-sustainability-and-worker-cooperatives/`
                 },
                 {
+                color: 'primary',
                 date: `2019`,
                 role: `Respondent & Rapporteur`,
                 title: `Blue-Green Infrastructure Colloquium`,
@@ -221,6 +226,7 @@ export const store = new Vuex.Store({
                 link: `Link> https://www.lincolninst.edu/`
                 },
                 {
+                color: 'primary',
                 date: `2019`,
                 role: `Curator & Moderator`,
                 title: `Put Your Money Where It Matters: A Practical Intro to Impact Investment for Individuals `,
@@ -229,6 +235,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/put-your-money-where-it-matters/`
                 },
                 {
+                color: 'primary',
                 date: `2018`,
                 role: `Speaker`,
                 title: `Brownfields: Rewriting Industrial Legacy from Brown to Green`,
@@ -237,6 +244,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/brownfields/`
                 },
                 {
+                color: 'primary',
                 date: `2018`,
                 role: `Speaker`,
                 title: `Climate Change Action Panel`,
@@ -245,6 +253,7 @@ export const store = new Vuex.Store({
                 link: ``
                 },
                 {
+                color: 'primary',
                 date: `2018`,
                 role: `Speaker`,
                 title: `Solar for Houses of Worship`,
@@ -253,6 +262,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/carbon_realities/`
                 },
                 {
+                color: 'primary',
                 date: `2017`,
                 role: `Curator & Catalyst`,
                 title: `“Climate, air quality, and health benefits of a carbon fee-and-rebate bill in Massachusetts”`,
@@ -261,6 +271,7 @@ export const store = new Vuex.Store({
                 link: `https://www.wwlp.com/news/study-adds-fuel-to-debate-over-carbon-fees/`
                 },
                 {
+                color: 'primary',
                 date: `2017`,
                 role: `Curator & Moderator`,
                 title: `Clearing the Air: Carbon and Health`,
@@ -269,6 +280,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/clearing-the-air-carbon-and-health/`
                 },
                 {
+                color: 'primary',
                 date: `2017`,
                 role: `Speaker`,
                 title: `Screening “The Last Mountain” and discussion with WVa native and mountaintop removal activist Bo Webb.`,
@@ -277,6 +289,7 @@ export const store = new Vuex.Store({
                 link: `https://www.facebook.com/events/the-rockwell/the-last-mountain-film-screening/130293991027053/`
                 },
                 {
+                color: 'primary',
                 date: `2017`,
                 role: `Curator`,
                 title: `Financial Innovation as the Key to Clean Energy & Efficiency Transformation`,
@@ -285,6 +298,7 @@ export const store = new Vuex.Store({
                 link: `https://environment.harvard.edu/events/2017-10-11-201500/cic-green-innovation-industry-night`
                 },
                 {
+                color: 'primary',
                 date: `2017`,
                 role: `Curator & Moderator`,
                 title: `Let’s Get Local: Attracting Capital to Local Energy Projects`,
@@ -293,6 +307,7 @@ export const store = new Vuex.Store({
                 link: `https://www.greentownlabs.com/event/lets-get-local-attracting-capital-local-energy-projects/`
                 },
                 {
+                color: 'primary',
                 date: `2016`,
                 role: `Curator & Moderator`,
                 title: `Carbon Realities`,
@@ -301,6 +316,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/carbon_realities/`
                 },
                 {
+                color: 'primary',
                 date: `2016`,
                 role: `Curator & Moderator`,
                 title: `Let’s Get Local: Attracting Capital to Local Energy Projects`,
@@ -309,6 +325,7 @@ export const store = new Vuex.Store({
                 link: `https://www.greentownlabs.com/event/lets-get-local-attracting-capital-local-energy-projects/`
                 },
                 {
+                color: 'primary',
                 date: `2016`,
                 role: `Curator & Speaker`,
                 title: `The Clean Energy Transition`,
@@ -317,6 +334,7 @@ export const store = new Vuex.Store({
                 link: `https://basgdotorg.wordpress.com/archive/the-clean-energy-transition/`
                 },
                 {
+                color: 'primary',
                 date: `2015`,
                 role: `Speaker`,
                 title: `Screening “The Last Mountain”`,
@@ -325,6 +343,7 @@ export const store = new Vuex.Store({
                 link: `https://oldoakdojo.com/event/documentary-the-last-mountain/`
                 },
                 {
+                color: 'primary',
                 date: `2015`,
                 role: `Speaker`,
                 title: `Screening “The Last Mountain"`,
@@ -333,6 +352,7 @@ export const store = new Vuex.Store({
                 link: `www.synapse-energy.com`
                 },
                 {
+                color: 'primary',
                 date: `2014`,
                 role: `Curator & Speaker`,
                 title: `Screening “The Last Mountain” and discussion with professor Tina Grotzer`,
@@ -341,6 +361,7 @@ export const store = new Vuex.Store({
                 link: `https://green.harvard.edu/events/last-mountain-screening-and-talk`
                 },
                 {
+                color: 'primary',
                 date: `2012`,
                 role: `Curator & Speaker`,
                 title: `Screening “The Last Mountain” and panel on “The True Cost of Energy: Coal”`,
@@ -349,6 +370,7 @@ export const store = new Vuex.Store({
                 link: `http://environment.harvard.edu/events/2012-05-09/true-cost-energy-coal`
                 },
                 {
+                color: 'primary',
                 date: `2012`,
                 role: `Curator & Speaker`,
                 title: `Screening “The Last Mountain”`,
@@ -357,6 +379,7 @@ export const store = new Vuex.Store({
                 link: `www.clf.org/blog/join-clf-at-a-free-screening-of-the-last-mountain-in-exeter-nh-on-may-4th/`
                 },
                 {
+                color: 'primary',
                 date: `2009`,
                 role: `Author`,
                 title: `“The main reason to raise the gas tax”`,

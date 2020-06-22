@@ -4,10 +4,11 @@
       <h3 class="display-2 hidden-sm-and-up ma-6">Events</h3>
       <v-divider class="primary"></v-divider>
       
-    <h2 class=" hidden-xs-only ma-6 text-left primary--text">Upcoming Events</h2>
-      <h4 class="hidden-sm-and-up ma-6 text-underline primary--text mobile-heading">Upcoming Events</h4>
+    <h2 class=" hidden-xs-only ma-6 text-left secondary--text">Upcoming Events</h2>
+      <h4 class="hidden-sm-and-up ma-6 text-underline secondary--text mobile-heading">Upcoming Events</h4>
       <v-div v-for="upcomingEvent in events.upcomingEvents" :key="upcomingEvent">
       <event-template
+      :color="upcomingEvent.color"
       :date="upcomingEvent.date"
       :role="upcomingEvent.role"
       :title="upcomingEvent.title"
@@ -17,15 +18,16 @@
       </v-div>
     <h2 class=" hidden-xs-only ma-6 text-left primary--text">Prior Events</h2>
       <h4 class="hidden-sm-and-up ma-6 primary--text mobile-heading">Prior Events</h4>
-      <v-div v-for="priorEvent in events.priorEvents" :key="priorEvent">
+      <div v-for="priorEvent in events.priorEvents" :key="priorEvent">
       <event-template
+      :color="priorEvent.color"
       :date="priorEvent.date"
       :role="priorEvent.role"
       :title="priorEvent.title"
       :host="priorEvent.host"
       :body="priorEvent.body"
       :link="priorEvent.link"></event-template>
-      </v-div>
+      </div>
       
       
   </div>    
@@ -35,6 +37,7 @@ import EventTemplate from '@/components/EventTemplate'
 export default {
     data(){
       return {
+        
       }
     },
     computed: {

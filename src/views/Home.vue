@@ -3,7 +3,7 @@
   <div class="home">
     <v-div>
       <!--Vertically center heading-->
-    <h1 class="display-1 my-4 hidden-sm-and-up">Cambridge Energy Advisors</h1>
+    <!-- <h1 class="display-1 my-4 hidden-sm-and-up">Cambridge Energy Advisors</h1> -->
     </v-div>
     <v-divider class="my-4 primary"></v-divider>
       <div v-for="(homeContent, index) in homeContents" :key="homeContent">
