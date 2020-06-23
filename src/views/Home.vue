@@ -6,10 +6,10 @@
       
       <hero-image
       data-aos="fade-in" data-aos-duration="1000"
-      :title="homeContent.head"
-      :body="homeContent.body"
-      :photo="homeContent.source"
-      :route="homeContent.route"
+      :title="homeContent[index].head"
+      :body="homeContent[index].body"
+      :photo="homeContent[index].source"
+      :route="homeContent[index].route"
       ></hero-image>
       
       
