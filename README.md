@@ -1,5 +1,7 @@
 # cambridge-energy-advisors
 
+## Note to developer: Make sure that git remote is updated on your local machine and is pointed to this repository (so it doesn't go to original developer.)
+
 ## Project setup
 ```
 npm install
