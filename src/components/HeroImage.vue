@@ -16,9 +16,9 @@
     <v-col class="" cols="12">
     <div class="backdrop">
         <h1 class="text-center display-2 mb-6 hidden-xs-only">{{ title }}</h1>
-        <h1 class="text-center display-1 mb-6 hidden-sm-and-up">{{ title }}</h1>
-        <p id="content-body" class="text-center  text--light hidden-xs-only">{{ body }}</p> <!--subheading-->
-        <p id="content-body-mobile" class="text-center text--light hidden-sm-and-up">{{ body }}</p> <!--subheading-->
+        <h1 id="mobile-img-title" class="text-center hidden-sm-and-up">{{ title }}</h1>
+        <h4 id="content-body" class="text-center text--light hidden-xs-only subheading">{{ body }}</h4> <!--subheading-->
+        <h4 id="content-body-mobile" class="text-center text--light hidden-sm-and-up subheading">{{ body }}</h4> <!--subheading-->
 
         <v-btn :to="route" outlined="" class="ma-6">Learn More <v-icon right>mdi-chevron-right</v-icon> </v-btn>
     </div>
@@ -37,6 +37,11 @@ export default {
 }
 </script>
 <style scoped>
+    #mobile-img-title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
     .backdrop{
         background-color: #0000008f;
         opacity: .8;
@@ -49,7 +54,7 @@ export default {
         font-size: 1.5rem;
     }
     #content-body-mobile{
-        font-size: 1.15rem;
+        font-size: 1.05em;
     }
     .subheading{
         font-size: 20px;
