@@ -3,12 +3,11 @@
     height="1000"
     dark
     :src="photo"
-    class="plax"
   >
     <v-row class="d-flex align-start justify-space-between"
     >
          <v-overlay
-          absolute=""
+          
           opacity=".1"
           >
 
