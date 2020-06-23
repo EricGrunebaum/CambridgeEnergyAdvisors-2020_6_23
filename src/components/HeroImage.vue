@@ -18,8 +18,8 @@
     <div class="backdrop">
         <h1 class="text-center display-2 mb-6 hidden-xs-only">{{ title }}</h1>
         <h1 class="text-center display-1 mb-6 hidden-sm-and-up">{{ title }}</h1>
-        <h4 id="content-body" class="text-center subheading text--light hidden-xs-only">{{ body }}</h4>
-        <h4 id="content-body-mobile" class="text-center subheading text--light hidden-sm-and-up">{{ body }}</h4>
+        <p id="content-body" class="text-center  text--light hidden-xs-only">{{ body }}</p> <!--subheading-->
+        <p id="content-body-mobile" class="text-center text--light hidden-sm-and-up">{{ body }}</p> <!--subheading-->
 
         <v-btn :to="route" outlined="" class="ma-6">Learn More <v-icon right>mdi-chevron-right</v-icon> </v-btn>
     </div>
