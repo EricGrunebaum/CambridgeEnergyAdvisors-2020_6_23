@@ -17,7 +17,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-babel": "^4.4.5",
     "@vue/cli-plugin-eslint": "^4.3.0",
     "@vue/cli-plugin-router": "^4.3.0",
     "@vue/cli-service": "^4.3.0",
@@ -45,7 +45,7 @@
     "rules": {}
   },
   "browserslist": [
-    "> 1%",
+    "> 0.25%",
     "last 2 versions",
     "not dead"
   ]
