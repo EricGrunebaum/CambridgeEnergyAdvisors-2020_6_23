@@ -5,6 +5,10 @@
       <v-divider id="divider"></v-divider>
     <article v-for="paragraph in project.paragraphs" :key="paragraph" class="content-body text-left">{{ paragraph }}<br><br></article>
    
+   <div v-if="this.projectId === 4">
+     <iframe frameborder="0" class="juxtapose" width="1035px" height="560px" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=a8bcba5c-c6f3-11ea-bf88-a15b6c7adf9a"></iframe>
+   </div>
+
    <div class="hidden-xs-only">
        <div class="d-flex justify-center">
         <v-img :src="project.photo2" max-width="600" alt="" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true"></v-img>
