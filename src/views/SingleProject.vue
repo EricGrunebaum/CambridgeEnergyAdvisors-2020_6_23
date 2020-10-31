@@ -10,7 +10,7 @@
     </div>
    
    <div v-if="this.projectId === 4">
-     <iframe frameborder="0" class="juxtapose" width="1035px" height="560px" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=dc6e9860-cea6-11ea-bf88-a15b6c7adf9a"></iframe>
+     <iframe frameborder="0" class="juxtapose" width="1035px" height="560px" src="http://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=dc6e9860-cea6-11ea-bf88-a15b6c7adf9a"></iframe>
    </div>
 
    <div class="hidden-xs-only">
